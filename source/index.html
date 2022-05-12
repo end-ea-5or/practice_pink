@@ -1,12 +1,103 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="descriptions" content="Тренировочный адаптивный сайт">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сайт фотоприложения для раскрашивания серых будней</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <!--            ----------------------header----------------------                     -->
+  <header class="page-header">
+    <a href="index.html" class="page-header__logo">
+      <img src="" alt="Сайт фотоприложения для раскрашивания серых будней" width="145" height="140">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/" class="main-nav__link" target="_blank">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--           ----------------------main----------------------                     -->
+  <main class="page-main">
+    <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
+    <section class="download">
+      <div class="download__wrapper">
+        <h2 class="download__title">Взгляните на жизнь иначе!</h2>
+        <div class="download__container">
+          <a href="#" class="download__link button">Скачать приложение</a>
+          <ul class="dowmnload__platforms">
+            <li class="download__item"><span class="visually-hidden">Доступно для IOS</span></li>
+            <li class="download__item"><span class="visually-hidden">Доступно для Android</span></li>
+            <li class="download__item"><span class="visually-hidden">Доступно для Windows</span></li>
+          </ul>
+          <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества нашего приложения</h2>
+      <div class="advantages__wrapper">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <img src="" alt="Поднимает настроение" class="advantages__picture advantages__picture--hidden">
+            <dl class="advantages__unit">
+              <dd class="advantages__definition">Поднимает настроение</dd>
+              <dt class="advantages__term">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+                несколько кликов!</dt>
+            </dl>
+          </li>
+          <li class="advantages__item">
+            <img src="" alt="Меняет мир вокруг" class="advantages__picture advantages__picture--hidden">
+            <dl class="advantages__unit">
+              <dd class="advantages__definition">Меняет мир вокруг</dd>
+              <dt class="advantages__term">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                усилить эффект</dt>
+            </dl>
+          </li>
+          <li class="advantages__item">
+            <img src="" alt="Заводит новых друзей" class="advantages__picture">
+            <dl class="advantages__unit">
+              <dd class="advantages__definition">Заводит новых друзей</dd>
+              <dt class="advantages__term">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+                новых</dt>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="research">
+      <h2 class="research__title">Эффект на 24 часа!</h2>
+      <div class="research__wrapper">
+        <img class="research__picture" src="" alt="Эффект на 24 часа!">
+        <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от
+          использования приложения длится целые сутки!</p>
+        <a href="#" class="research__link">Узнать больше об исследовании</a>
+      </div>
+    </section>
+
+  </main>
+  <!--           ----------------------footer----------------------                     -->
+  <footer class="page-footer">
+
+  </footer>
+</body>
+
 </html>
