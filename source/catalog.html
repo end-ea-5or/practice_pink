@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,8 +9,211 @@
   <title>Сайт фотоприложения для раскрашивания серых будней</title>
 </head>
 
-<body>
-
+<body class="page__body">
+  <header class="page-header">
+    <a href="index.html" class="page-header__logo">
+      <img src="" alt="Сайт фотоприложения для раскрашивания серых будней" width="145" height="40">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--current">
+            <a href="form.html" class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/" class="main-nav__link" target="_blank">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-inner">
+    <div class="page-inner__wrapper">
+      <h1 class="page-inner__title">Фотографии пользователей</h1>
+    </div>
+    <section class="gallery">
+      <h2 class="visually-hidden">Галеррея фотографий пользователей</h2>
+      <p class="gallery__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
+        ваших?</p>
+      <article class="photo photo--best">
+        <h3 class="visually-hidden">Панорама дня</h3>
+        <a href="#" class="photo__link">
+          <img src="" alt="Панорама дня">
+        </a>
+        <div class="photo__post">
+          <p class="photo__author">Анна <span class="photo__time">(5 минут назад)</span></p>
+          <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!</p>
+          <p class="photo__like">Нравится: <span class="photo__count-like">215</span>
+            <button class="photo__button" type="button">
+              <span class="visually-hidden">Поставить лайк</span>
+            </button>
+          </p>
+        </div>
+      </article>
+      <div class="gallery__wrapper">
+        <article class="photo">
+          <h3 class="visually-hidden">Фото пользователя</h3>
+          <a href="#" class="photo__link">
+            <img src="" alt="Фото машины">
+          </a>
+          <div class="photo__post">
+            <p class="photo__author">Левон <span class="photo__time">(5 часов назад)</span></p>
+            <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="photo__like">Нравится: <span class="photo__count-like">356</span>
+              <button class="photo__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+            </p>
+          </div>
+        </article>
+        <article class="photo">
+          <h3 class="visually-hidden">Фото пользователя</h3>
+          <a href="#" class="photo__link">
+            <img src="" alt="Барабаны">
+          </a>
+          <div class="photo__post">
+            <p class="photo__author">Антон <span class="photo__time">(12 часов назад)</span></p>
+            <p class="photo__text">Соседи будут рады!</p>
+            <p class="photo__like">Нравится: <span class="photo__count-like">666</span>
+              <button class="photo__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+            </p>
+          </div>
+        </article>
+        <article class="photo">
+          <h3 class="visually-hidden">Фото пользователя</h3>
+          <a href="#" class="photo__link">
+            <img src="" alt="Фото Бориса">
+          </a>
+          <div class="photo__post">
+            <p class="photo__author">Борис <span class="photo__time">(20 часов назад)</span></p>
+            <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="photo__like">Нравится: <span class="photo__count-like">215</span>
+              <button class="photo__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+            </p>
+          </div>
+        </article>
+        <article class="photo">
+          <h3 class="visually-hidden">Фото пользователя</h3>
+          <a href="#" class="photo__link">
+            <img src="" alt="Фото кубанской науки">
+          </a>
+          <div class="photo__post">
+            <p class="photo__author">Сергей <span class="photo__time">(25 часов назад)</span></p>
+            <p class="photo__text">Самая кубанская в мире!</p>
+            <p class="photo__like">Нравится: <span class="photo__count-like">4</span>
+              <button class="photo__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+            </p>
+          </div>
+        </article>
+        <article class="photo">
+          <h3 class="visually-hidden">Фото пользователя</h3>
+          <a href="#" class="photo__link">
+            <img src="" alt="Фото Максима">
+          </a>
+          <div class="photo__post">
+            <p class="photo__author">Максим <span class="photo__time">(40 часов назад)</span></p>
+            <p class="photo__text">Где снег-то?</p>
+            <p class="photo__like">Нравится: <span class="photo__count-like">150</span>
+              <button class="photo__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+            </p>
+          </div>
+        </article>
+        <article class="photo">
+          <h3 class="visually-hidden">Фото пользователя</h3>
+          <a href="#" class="photo__link">
+            <img src="" alt="Фото машины">
+          </a>
+          <div class="photo__post">
+            <p class="photo__author">Надежда <span class="photo__time">(45 часов назад)</span></p>
+            <p class="photo__text">Всем GM и взаимные лайки!</p>
+            <p class="photo__like">Нравится: <span class="photo__count-like">2560</span>
+              <button class="photo__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="photoeditor">
+      <h2 class="photoeditor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+      <form class="photoeditor__form" action="https://echo.htmlacademy.ru/" method="post" enctype="multipart/form-data">
+        <img class="photoeditor__picture" src="" alt="Редактируемое фото">
+        <label class="visually-hidden">Выбрать фотографию
+          <input type="file" name="upload-field">
+        </label>
+        <div class="photoeditor__buttons">
+          <button type="button">
+            <span class="visually-hidden">Обрезать</span>
+          </button>
+          <button type="button">
+            <span class="visually-hidden">Сделать заливку</span>
+          </button>
+          <button type="button">
+            <span class="visually-hidden">Изменить контрастность</span>
+          </button>
+        </div>
+        <div class="photoeditor__ranges">
+          <label class="range-bar">
+            <span class="visually-hidden">Обрезать фотографию</span>
+            <input class="range-bar__input" type="range" name="crop" step="1" min="0" max="100" value="88">
+          </label>
+          <label class="range-bar">
+            <span class="visually-hidden">Выполнить заливку</span>
+            <input class="range-bar__input" type="range" name="filling" step="1" min="0" max="100" value="14">
+          </label>
+          <label class="range-bar">
+            <span class="visually-hidden">Изменить контрастность</span>
+            <input class="range-bar__input" type="range" name="contrast" step="1" min="0" max="100" value="69">
+          </label>
+        </div>
+        <div class="photoeditor__controls">
+          <button class="photoeditor__submit button" type="submit">Запостить</button>
+          <button class="photoeditor__reset button" type="reset">Отмена</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="index.html">
+        <img src="" alt="Сайт фотоприложения для раскрашивания серых будней" width="145" height="40">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы во фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Мы в ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
