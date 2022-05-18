@@ -12,24 +12,25 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="" alt="Сайт фотоприложения для раскрашивания серых будней" width="145" height="40">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/svg/logos/logo-primary.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="74"
+        height="23">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a href="#" class="main-nav__link">Главная</a>
+            <a class="main-nav__link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html" class="main-nav__link">Фотографии</a>
+            <a class="main-nav__link" href="catalog.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Конкурс</a>
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/" class="main-nav__link" target="_blank">HTML Academy</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -43,9 +44,21 @@
         <div class="download__container">
           <a href="#" class="download__link button">Скачать приложение</a>
           <ul class="dowmnload__platforms">
-            <li class="download__item"><span class="visually-hidden">Доступно для IOS</span></li>
-            <li class="download__item"><span class="visually-hidden">Доступно для Android</span></li>
-            <li class="download__item"><span class="visually-hidden">Доступно для Windows</span></li>
+            <li class="download__item">
+              <a class="download__marketplace" href="https://apps.apple.com/">
+                <span class="visually-hidden">Доступно для IOS</span>
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__marketplace" href="https://play.google.com/">
+                <span class="visually-hidden">Доступно для Android</span>
+              </a>
+            </li>
+            <li class="download__item">
+              <a class="download__marketplace" href="https://apps.microsoft.com/">
+                <span class="visually-hidden">Доступно для Windows</span>
+              </a>
+            </li>
           </ul>
           <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
@@ -54,10 +67,14 @@
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества нашего приложения</h2>
       <div class="advantages__wrapper">
+        <div class="advantages__descriptions">
+          <p class="advantages__description">Устали от серости мегаполиса?</p>
+          <p class="advantages__description advantages__description--bottom">Нам есть, что вам предложить!</p>
+        </div>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <img src="" alt="Поднимает настроение"
-              class="advantages__picture advantages__picture--mood advantages__picture--hidden">
+            <img class="advantages__picture advantages__picture--mood advantages__picture--hidden"
+              src="img/phones/iphone-1.png" alt="Поднимает настроение" width="157" height="320">
             <dl class="advantages__unit">
               <dt class="advantages__definition">Поднимает настроение</dt>
               <dd class="advantages__term">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
@@ -65,8 +82,8 @@
             </dl>
           </li>
           <li class="advantages__item">
-            <img src="" alt="Меняет мир вокруг"
-              class="advantages__picture advantages__picture--world advantages__picture--hidden">
+            <img class="advantages__picture advantages__picture--world advantages__picture--hidden"
+              src="img/phones/iphone-2.png" alt="Меняет мир вокруг" width="157" height="320">
             <dl class="advantages__unit">
               <dt class="advantages__definition">Меняет мир вокруг</dt>
               <dd class="advantages__term">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
@@ -74,7 +91,8 @@
             </dl>
           </li>
           <li class="advantages__item">
-            <img src="" alt="Заводит новых друзей" class="advantages__picture advantages__picture--friends">
+            <img class="advantages__picture advantages__picture--friends" src="img/phones/iphone-3.png"
+              alt="Заводит новых друзей" width="157" height="320">
             <dl class="advantages__unit">
               <dt class="advantages__definition">Заводит новых друзей</dt>
               <dd class="advantages__term">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
@@ -121,8 +139,8 @@
               будто растушевываю румяна!) СУПЕР!!!!!»</p>
             <p class="reviews__author-info">38 лет, инженер-филателист</p>
           </blockquote>
-          <button class="reviews__prev" type="button">Преддущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
+          <button class="reviews__arrow reviews__arrow--prev" type="button">Преддущий отзыв</button>
+          <button class="reviews__arrow reviews__arrow--next" type="button">Следующий отзыв</button>
         </div>
         <p class="reviews__toggles slider__toogles">
           <button class="slider__toogle slider__toogle--current" type="button">1</button>
@@ -137,10 +155,10 @@
         <table class="tariff__info">
           <colgroup>
             <!--для работы слайдера-->
-            <col>
-            <col>
-            <col>
-            <col>
+            <col class="tariff__col tariff__col--1">
+            <col class="tariff__col">
+            <col class="tariff__col">
+            <col class="tariff__col">
           </colgroup>
           <tr>
             <th class="tariff__item tariff__item--hidden">
@@ -166,21 +184,48 @@
           </tr>
           <tr>
             <td class="tariff__one">Розовый фильтр</td>
-            <td class="tariff__one"><span class="visually-hidden">Да</span></td>
-            <td class="tariff__one"><span class="visually-hidden">Да</span></td>
-            <td class="tariff__one"><span class="visually-hidden">Да</span></td>
+            <td class="tariff__one">
+              <span class="tariff__hidden-name">Розовый фильтр</span>
+              <span class="visually-hidden">Да</span>
+            </td>
+            <td class="tariff__one">
+              <span class="tariff__hidden-name">Розовый фильтр</span>
+              <span class="visually-hidden">Да</span>
+            </td>
+            <td class="tariff__one">
+              <span class="tariff__hidden-name">Розовый фильтр</span>
+              <span class="visually-hidden">Да</span>
+            </td>
           </tr>
           <tr>
             <td class="tariff__one">Смайлики</td>
-            <td class="tariff__one"><span class="visually-hidden">Нет</span></td>
-            <td class="tariff__one"><span class="visually-hidden">Да</span></td>
-            <td class="tariff__one"><span class="visually-hidden">Да</span></td>
+            <td class="tariff__one">
+              <span class="tariff__hidden-name">Смайлики</span>
+              <span class="visually-hidden">Нет</span>
+            </td>
+            <td class="tariff__one">
+              <span class="tariff__hidden-name">Смайлики</span>
+              <span class="visually-hidden">Да</span>
+            </td>
+            <td class="tariff__one">
+              <span class="tariff__hidden-name">Смайлики</span>
+              <span class="visually-hidden">Да</span>
+            </td>
           </tr>
           <tr>
             <td class="tariff__one">Комментарии</td>
-            <td class="tariff__one"><span class="visually-hidden">Нет</span></td>
-            <td class="tariff__one"><span class="visually-hidden">Нет</span></td>
-            <td class="tariff__one"><span class="visually-hidden">Да</span></td>
+            <td class="tariff__one">
+              <span class="tariff__hidden-name">Комментарии</span>
+              <span class="visually-hidden">Нет</span>
+            </td>
+            <td class="tariff__one">
+              <span class="tariff__hidden-name">Комментарии</span>
+              <span class="visually-hidden">Нет</span>
+            </td>
+            <td class="tariff__one">
+              <span class="tariff__hidden-name">Комментарии</span>
+              <span class="visually-hidden">Да</span>
+            </td>
           </tr>
         </table>
         <p class="tariff__toggles slider__toogles">
@@ -199,23 +244,25 @@
             <a class="contacts__link" href="tel:+78125556666"><span class="contacts__text">+7 (812) 555-66-66</span></a>
           </li>
           <li class="contacts__item">
-            <p class="contacts__description">Приезжайте в гости:</p>
-            <p class="contacts__address"><span class="contacts__text">ул. Большая Конюшенная, 19/8</span></p>
-          </li>
-          <li class="contacts__item">
             <p class="contacts__description">Пишите:</p>
             <a class="contacts__link" href="mailto:mail@htmlacademy.ru"><span
                 class="contacts__text">mail@htmlacademy.ru</span></a>
           </li>
+          <li class="contacts__item">
+            <p class="contacts__description">Приезжайте в гости:</p>
+            <p class="contacts__address"><span class="contacts__text">ул. Большая Конюшенная, 19/8</span></p>
+          </li>
         </ul>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <img class="contacts__map-picture" src="img/map/map-mobile.jpg" alt="Карта, как нас найти" width="320" height="200">
+        </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html">
-        <img src="" alt="Сайт фотоприложения для раскрашивания серых будней" width="145" height="40">
+        <img src="img/svg/logos/logo-footer.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="145" height="40">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
