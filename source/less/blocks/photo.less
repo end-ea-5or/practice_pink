@@ -1,0 +1,52 @@
+.photo {
+  position: relative;
+  background-color: @light-gray;
+
+  &--best {
+    ::after {
+      content: "панорама дня";
+      position: absolute;
+      top: 0;
+      right: 10px;
+      display: inline-block;
+      padding: 5px 20px;
+      background-color: @pink;
+      text-align: center;
+      color: @white;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.photo__author {
+  .no_indent();
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.photo__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photo__text {
+  .no_indent();
+  line-height: 24px;
+}
+
+.photo__like {
+  .no_indent();
+  font-size: 12px;
+  line-height: 24px;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.photo__button {
+  .no_button_style;
+}

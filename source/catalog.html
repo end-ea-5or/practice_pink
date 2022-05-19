@@ -12,24 +12,25 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="" alt="Сайт фотоприложения для раскрашивания серых будней" width="145" height="40">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/svg/logos/logo-primary.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="74"
+        height="23">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html" class="main-nav__link">Главная</a>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Фотографии</a>
-          </li>
-          <li class="main-nav__item  main-nav__item--current">
-            <a href="form.html" class="main-nav__link">Конкурс</a>
+            <a class="main-nav__link" href="#">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/" class="main-nav__link" target="_blank">HTML Academy</a>
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -46,7 +47,7 @@
       <article class="photo photo--best">
         <h3 class="visually-hidden">Панорама дня</h3>
         <a href="#" class="photo__link">
-          <img src="" alt="Панорама дня">
+          <img src="img/gallery/panorama-mobile.jpg" alt="Панорама дня">
         </a>
         <div class="photo__post">
           <p class="photo__author">Анна <span class="photo__time">(5 минут назад)</span></p>
@@ -63,7 +64,7 @@
         <article class="photo">
           <h3 class="visually-hidden">Фото пользователя</h3>
           <a href="#" class="photo__link">
-            <img src="" alt="Фото машины">
+            <img src="img/gallery/photo-1-mobile.jpg" alt="Фото машины">
           </a>
           <div class="photo__post">
             <p class="photo__author">Левон <span class="photo__time">(5 часов назад)</span></p>
@@ -78,7 +79,7 @@
         <article class="photo">
           <h3 class="visually-hidden">Фото пользователя</h3>
           <a href="#" class="photo__link">
-            <img src="" alt="Барабаны">
+            <img src="img/gallery/photo-2-mobile.jpg" alt="Барабаны">
           </a>
           <div class="photo__post">
             <p class="photo__author">Антон <span class="photo__time">(12 часов назад)</span></p>
@@ -93,7 +94,7 @@
         <article class="photo">
           <h3 class="visually-hidden">Фото пользователя</h3>
           <a href="#" class="photo__link">
-            <img src="" alt="Фото Бориса">
+            <img src="img/gallery/photo-3-mobile.jpg" alt="Фото Бориса">
           </a>
           <div class="photo__post">
             <p class="photo__author">Борис <span class="photo__time">(20 часов назад)</span></p>
@@ -108,7 +109,7 @@
         <article class="photo">
           <h3 class="visually-hidden">Фото пользователя</h3>
           <a href="#" class="photo__link">
-            <img src="" alt="Фото кубанской науки">
+            <img src="img/gallery/photo-4-mobile.jpg" alt="Фото кубанской науки">
           </a>
           <div class="photo__post">
             <p class="photo__author">Сергей <span class="photo__time">(25 часов назад)</span></p>
@@ -123,7 +124,7 @@
         <article class="photo">
           <h3 class="visually-hidden">Фото пользователя</h3>
           <a href="#" class="photo__link">
-            <img src="" alt="Фото Максима">
+            <img src="img/gallery/photo-5-mobile.jpg" alt="Фото Максима">
           </a>
           <div class="photo__post">
             <p class="photo__author">Максим <span class="photo__time">(40 часов назад)</span></p>
@@ -138,7 +139,7 @@
         <article class="photo">
           <h3 class="visually-hidden">Фото пользователя</h3>
           <a href="#" class="photo__link">
-            <img src="" alt="Фото машины">
+            <img src="img/gallery/photo-6-mobile.jpg" alt="Фото машины">
           </a>
           <div class="photo__post">
             <p class="photo__author">Надежда <span class="photo__time">(45 часов назад)</span></p>
@@ -155,18 +156,18 @@
     <section class="photoeditor">
       <h2 class="photoeditor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
       <form class="photoeditor__form" action="https://echo.htmlacademy.ru/" method="post" enctype="multipart/form-data">
-        <img class="photoeditor__picture" src="" alt="Редактируемое фото">
+        <img class="photoeditor__picture" src="img/gallery/upload-image.jpg" alt="Редактируемое фото">
         <label class="visually-hidden">Выбрать фотографию
           <input type="file" name="upload-field">
         </label>
         <div class="photoeditor__buttons">
-          <button type="button">
+          <button class="photoeditor__button" type="button">
             <span class="visually-hidden">Обрезать</span>
           </button>
-          <button type="button">
+          <button class="photoeditor__button" type="button">
             <span class="visually-hidden">Сделать заливку</span>
           </button>
-          <button type="button">
+          <button class="photoeditor__button" type="button">
             <span class="visually-hidden">Изменить контрастность</span>
           </button>
         </div>
@@ -194,7 +195,8 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html">
-        <img src="" alt="Сайт фотоприложения для раскрашивания серых будней" width="145" height="40">
+        <img src="img/svg/logos/logo-footer.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="145"
+          height="40">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -211,7 +213,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+        <a class=" " href="https://htmlacademy.ru/">HTML Academy</a>
       </div>
     </div>
   </footer>

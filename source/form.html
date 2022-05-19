@@ -12,24 +12,25 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="" alt="Сайт фотоприложения для раскрашивания серых будней" width="145" height="40">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/svg/logos/logo-primary.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="74"
+        height="23">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html" class="main-nav__link">Главная</a>
-          </li>
           <li class="main-nav__item main-nav__item--current">
-            <a href="catalog.html" class="main-nav__link">Фотографии</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Конкурс</a>
+            <a class="main-nav__link" href="catalog.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/" class="main-nav__link" target="_blank">HTML Academy</a>
+            <a class="main-nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -40,7 +41,7 @@
       <h1 class="page-inner__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post" enctype="multipart/form-data">
-      <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+      <p class="form__message">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
         вашу бонусную карту!</p>
       <fieldset class="form__full-name">
         <legend class="visually-hidden">ФИО</legend>
@@ -59,36 +60,36 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__achievements">
-        <legend class="form__description">Ваши безбашенные достижения в путешествии</legend>
+      <fieldset class="form__achievements form__achievements--gray">
+        <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
         <ul class="form__list">
           <li class="form__item">
-            <label class="form__description" for="selfie">Сделал селфи с акулой</label>
+            <label class="form__checks" for="selfie">Сделал селфи с акулой</label>
             <input type="checkbox" name="achievements" value="selfie" id="selfie" checked>
           </li>
           <li class="form__item">
-            <label class="form__description" for="burned">Обгорел на пляже</label>
+            <label class="form__checks" for="burned">Обгорел на пляже</label>
             <input type="checkbox" name="achievements" value="burned" id="burned" checked>
           </li>
           <li class="form__item">
-            <label class="form__description" for="Chack">Видел Чака Норриса</label>
+            <label class="form__checks" for="Chack">Видел Чака Норриса</label>
             <input type="checkbox" name="achievements" value="Chack" id="Chack">
           </li>
           <li class="form__item">
-            <label class="form__description" for="souvenirs">Накупил сувениров</label>
+            <label class="form__checks" for="souvenirs">Накупил сувениров</label>
             <input type="checkbox" name="achievements" value="souvenirs" id="souvenirs">
           </li>
           <li class="form__item">
-            <label class="form__description" for="tower">Удержал башню</label>
+            <label class="form__checks" for="tower">Удержал башню</label>
             <input type="checkbox" name="achievements" value="tower" id="tower" checked>
           </li>
           <li class="form__item">
-            <label class="form__description" for="hotel">Разгромил отель</label>
+            <label class="form__checks" for="hotel">Разгромил отель</label>
             <input type="checkbox" name="achievements" value="hotel" id="hotel">
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__contacts">
+      <fieldset class="form__achievements">
         <legend class="visually-hidden">Ваши контакты для связи</legend>
         <ul class="form__list">
           <li class="form__item">
@@ -101,31 +102,31 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__app">
-        <legend class="form__description">С каким приложением путешествовали?</legend>
+      <fieldset class="form__achievements form__achievements--gray">
+        <legend class="form__legend">С каким приложением путешествовали?</legend>
         <ul class="form__list">
           <li class="form__item">
-            <label class="form__description" for="ios">Pink для iOS</label>
+            <label class="form__checks" for="ios">Pink для iOS</label>
             <input type="radio" name="app" value="ios" id="ios" checked>
           </li>
           <li class="form__item">
-            <label class="form__description" for="android">Pink на Android</label>
+            <label class="form__checks" for="android">Pink на Android</label>
             <input type="radio" name="app" value="android" id="android">
           </li>
           <li class="form__item">
-            <label class="form__description" for="windows">Windows Phone</label>
+            <label class="form__checks" for="windows">Windows Phone</label>
             <input type="radio" name="app" value="windows" id="windows">
           </li>
         </ul>
       </fieldset>
       <fieldset class="form__emotions">
-        <legend class="form__description">Опишите свои эмоции</legend>
+        <legend class="form__legend">Опишите свои эмоции</legend>
         <label class="visually-hidden" for="emotions">Опишите тут свои эмоции</label>
         <textarea name="emotions" id="emotions" cols="30" rows="10"
           placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
       <div class="form__submit-wrapper">
-        <button class="form__button button" type="submit">Отправить форму</button>
+        <button class="form__button" type="submit">Отправить форму</button>
         <p class="form__directive"><span>*</span> — обязательные для заполнения поля</p>
       </div>
     </form>
@@ -133,7 +134,8 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html">
-        <img src="" alt="Сайт фотоприложения для раскрашивания серых будней" width="145" height="40">
+        <img src="img/svg/logos/logo-footer.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="145"
+          height="40">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -150,7 +152,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+        <a class=" " href="https://htmlacademy.ru/">HTML Academy</a>
       </div>
     </div>
   </footer>
