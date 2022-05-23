@@ -1,5 +1,12 @@
+.page {
+  height: 100%;
+}
+
 .page__body {
+  display: flex;
+  flex-direction: column;
   min-width: 320px;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: @font;
@@ -8,4 +15,8 @@
   font-weight: 400;
   line-height: 30px;
   background-color: @white;
+}
+
+.page-main {
+  flex-grow: 1;
 }

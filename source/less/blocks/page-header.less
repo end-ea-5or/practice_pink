@@ -1,4 +1,33 @@
 .page-header {
-  background-color: @dark-blue;
-  color: @white;
+  position: relative;
+  min-height: 69px;
+  background-color: @opacity-black;
+
+  @media @tablet-width {
+    min-height: 110px;
+  }
+}
+
+.page-header__wrapper {
+  position: relative;
+}
+
+.page-header__logo {
+  position: absolute;
+  z-index: 32;
+  width: 74px;
+  height: 23px;
+  padding: 23px 20px;
+  box-sizing: content-box;
+
+  @media @tablet-width {
+    width: 145px;
+    height: 40px;
+    padding: 27px 20px 42px;
+    background-color: rgba(41, 233, 11, 0.5); /* временно */
+  }
+
+  // @media @desktop-width {
+  //   padding: 27px 20px 43px 20px;
+  // }
 }

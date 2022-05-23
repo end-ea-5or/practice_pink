@@ -12,13 +12,16 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/svg/logos/logo-primary.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="74"
-        height="23">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/svg/logos/logo-primary.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="74"
+          height="23">
+      </a>
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle main-nav__toggle--opened" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <span class="main-nav__burger"></span>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
             <a class="main-nav__link" href="#">Главная</a>
@@ -33,8 +36,8 @@
             <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
@@ -254,7 +257,8 @@
           </li>
         </ul>
         <div class="contacts__map">
-          <img class="contacts__map-picture" src="img/map/map-mobile.jpg" alt="Карта, как нас найти" width="320" height="200">
+          <img class="contacts__map-picture" src="img/map/map-mobile.jpg" alt="Карта, как нас найти" width="320"
+            height="200">
         </div>
       </div>
     </section>
@@ -262,7 +266,8 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html">
-        <img src="img/svg/logos/logo-footer.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="145" height="40">
+        <img src="img/svg/logos/logo-footer.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="145"
+          height="40">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -283,6 +288,21 @@
       </div>
     </div>
   </footer>
+  <script>
+    let navMain = document.querySelector('.main-nav');
+    let navToggle = navMain.querySelector('.main-nav__toggle');
+    navMain.classList.remove('main-nav--nojs');
+    navMain.classList.add('main-nav--closed');
+    navToggle.addEventListener('click', () => {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.remove('main-nav--opened');
+        navMain.classList.add('main-nav--closed');
+      }
+    })
+  </script>
 </body>
 
 </html>
