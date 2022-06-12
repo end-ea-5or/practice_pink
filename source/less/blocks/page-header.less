@@ -1,7 +1,17 @@
+.page-header {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.3);
+
+  @media @desktop-width {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .page-header__logo {
@@ -10,6 +20,14 @@
   z-index: 3;
   align-self: flex-start;
   padding: 23px 20px;
+
+  @media @tablet-width {
+    padding: 27px 20px 42px 20px;
+  }
+
+  @media @desktop-width {
+    padding: 27px 20px 42px 0;
+  }
 
   & img {
     .no_link_style();
