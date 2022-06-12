@@ -1,34 +1,68 @@
 .download {
   color: #ffffff;
-  background-color: #283645;
+  background-color: #1d2631;
+  // background-image: url("../img/backgrounds/phone-intro-mobile.png"), url("../img/backgrounds/bg-mobile.jpg");
+  // background-size: 100%, 100%;
+  // background-repeat: no-repeat;
+}
+
+.download__wrapper {
+  // padding: 95px 20px 38px 20px;
+}
+
+.download__box {
+  min-height: 462px;
+  padding: 95px 20px 20px 20px;
   background-image: url("../img/backgrounds/phone-intro-mobile.png"), url("../img/backgrounds/bg-mobile.jpg");
   background-size: 100%, 100%;
+  background-position: left bottom, left top;
   background-repeat: no-repeat;
 }
 
 .download__title {
+  .no_indent();
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
 }
 
+.download__container {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 20px 38px;
+}
+
 .download__link {
   .no_link_style();
+  margin-bottom: 32px;
+  padding: 15px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
 }
 
 .dowmnload__platforms {
   .no_list_style();
+  display: flex;
+  margin-bottom: 28px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .download__marketplace {
   .no_link_style();
+  display: block;
+  padding: 0 20px;
 }
 
 .download__description {
+  .no_indent();
+  text-align: center;
   font-weight: 300;
   line-height: 24px;
 }
