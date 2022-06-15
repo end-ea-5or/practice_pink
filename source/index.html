@@ -116,7 +116,7 @@
             </dl>
           </li>
           <li class="advantages__item advantages__item--friends">
-            <dl class="advantages__unit">
+            <dl class=" ">
               <dt class="advantages__definition advantages__definition--friends">Заводит новых друзей</dt>
               <dd class="advantages__term">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
                 новых</dd>
@@ -126,19 +126,18 @@
       </div>
     </section>
     <section class="research">
-      <h2 class="research__title">Эффект на 24 часа!</h2>
       <div class="research__wrapper">
-        <img class="research__picture" src="" alt="Эффект на 24 часа!">
+        <h2 class="research__title">Эффект на&nbsp;24 часа!</h2>
         <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от
           использования приложения длится целые сутки!</p>
-        <a href="#" class="research__link">Узнать больше об исследовании</a>
+        <a class="research__link" href="#">Узнать больше об исследовании</a>
       </div>
     </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="reviews__wrapper slider">
         <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item slider__item  slider__item--current">
             <cite class="reviews__author-name">Николай Петров</cite>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -162,13 +161,16 @@
               будто растушевываю румяна!) СУПЕР!!!!!»</p>
             <p class="reviews__author-info">38 лет, инженер-филателист</p>
           </blockquote>
-          <button class="reviews__arrow reviews__arrow--prev" type="button">Преддущий отзыв</button>
-          <button class="reviews__arrow reviews__arrow--next" type="button">Следующий отзыв</button>
+          <button class="reviews__arrow reviews__arrow--prev" type="button"><span class="visually-hidden">Преддущий
+              отзыв</span></button>
+          <button class="reviews__arrow reviews__arrow--next" type="button"><span class="visually-hidden">Следующий
+              отзыв</span></button>
         </div>
         <p class="reviews__toggles slider__toogles">
-          <button class="slider__toogle slider__toogle--current" type="button">1</button>
-          <button class="slider__toogle" type="button">2</button>
-          <button class="slider__toogle" type="button">3</button>
+          <button class="slider__toogle slider__toogle--current" type="button"><span
+              class="visually-hidden">1</span></button>
+          <button class="slider__toogle" type="button"><span class="visually-hidden">2</span></button>
+          <button class="slider__toogle" type="button"><span class="visually-hidden">3</span></button>
         </p>
       </div>
     </section>
@@ -176,85 +178,76 @@
       <h2 class="visually-hidden">Тарифные планы</h2>
       <div class="tariff__wrapper">
         <table class="tariff__info">
-          <colgroup>
-            <!--для работы слайдера-->
-            <col class="tariff__col tariff__col--1">
-            <col class="tariff__col">
-            <col class="tariff__col">
-            <col class="tariff__col">
-          </colgroup>
-          <tr>
-            <th class="tariff__item tariff__item--hidden">
-            </th>
-            <th class="tariff__item">
-              <div class="tariff__name-wrapper">
+          <thead>
+            <tr>
+              <th class="tariff__item  tariff__item--hidden"></th>
+              <th class="tariff__item ">
                 <span class="tariff__name">База</span>
                 <span class="tariff__price">1,99 usd</span>
-              </div>
-            </th>
-            <th class="tariff__item tariff__item--hit">
-              <div class="tariff__name-wrapper">
+              </th>
+              <th class="tariff__item  tariff__item--hit">
                 <span class="tariff__name">Стандарт</span>
                 <span class="tariff__price">3,99 usd</span>
-              </div>
-            </th>
-            <th class="tariff__item">
-              <div class="tariff__name-wrapper">
+              </th>
+              <th class="tariff__item ">
                 <span class="tariff__name">Анлим</span>
                 <span class="tariff__price">9,99 usd</span>
-              </div>
-            </th>
-          </tr>
-          <tr>
-            <td class="tariff__one">Розовый фильтр</td>
-            <td class="tariff__one">
-              <span class="tariff__hidden-name">Розовый фильтр</span>
-              <span class="visually-hidden">Да</span>
-            </td>
-            <td class="tariff__one">
-              <span class="tariff__hidden-name">Розовый фильтр</span>
-              <span class="visually-hidden">Да</span>
-            </td>
-            <td class="tariff__one">
-              <span class="tariff__hidden-name">Розовый фильтр</span>
-              <span class="visually-hidden">Да</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="tariff__one">Смайлики</td>
-            <td class="tariff__one">
-              <span class="tariff__hidden-name">Смайлики</span>
-              <span class="visually-hidden">Нет</span>
-            </td>
-            <td class="tariff__one">
-              <span class="tariff__hidden-name">Смайлики</span>
-              <span class="visually-hidden">Да</span>
-            </td>
-            <td class="tariff__one">
-              <span class="tariff__hidden-name">Смайлики</span>
-              <span class="visually-hidden">Да</span>
-            </td>
-          </tr>
-          <tr>
-            <td class="tariff__one">Комментарии</td>
-            <td class="tariff__one">
-              <span class="tariff__hidden-name">Комментарии</span>
-              <span class="visually-hidden">Нет</span>
-            </td>
-            <td class="tariff__one">
-              <span class="tariff__hidden-name">Комментарии</span>
-              <span class="visually-hidden">Нет</span>
-            </td>
-            <td class="tariff__one">
-              <span class="tariff__hidden-name">Комментарии</span>
-              <span class="visually-hidden">Да</span>
-            </td>
-          </tr>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tariff__one tariff__one--empty">Розовый фильтр</td>
+              <td class="tariff__one">
+                <span class="tariff__hidden-name tariff__hidden-name--yes">Розовый фильтр</span>
+                <span class="visually-hidden">Да</span>
+              </td>
+              <td class="tariff__one">
+                <span class="tariff__hidden-name tariff__hidden-name--yes">Розовый фильтр</span>
+                <span class="visually-hidden">Да</span>
+              </td>
+              <td class="tariff__one">
+                <span class="tariff__hidden-name tariff__hidden-name--yes">Розовый фильтр</span>
+                <span class="visually-hidden">Да</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariff__one tariff__one--empty">Смайлики</td>
+              <td class="tariff__one">
+                <span class="tariff__hidden-name tariff__hidden-name--no">Смайлики</span>
+                <span class="visually-hidden">Нет</span>
+              </td>
+              <td class="tariff__one">
+                <span class="tariff__hidden-name tariff__hidden-name--yes">Смайлики</span>
+                <span class="visually-hidden">Да</span>
+              </td>
+              <td class="tariff__one">
+                <span class="tariff__hidden-name tariff__hidden-name--yes">Смайлики</span>
+                <span class="visually-hidden">Да</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariff__one tariff__one--empty">Комментарии</td>
+              <td class="tariff__one">
+                <span class="tariff__hidden-name tariff__hidden-name--no">Комментарии</span>
+                <span class="visually-hidden">Нет</span>
+              </td>
+              <td class="tariff__one">
+                <span class="tariff__hidden-name tariff__hidden-name--no">Комментарии</span>
+                <span class="visually-hidden">Нет</span>
+              </td>
+              <td class="tariff__one">
+                <span class="tariff__hidden-name tariff__hidden-name--yes">Комментарии</span>
+                <span class="visually-hidden">Да</span>
+              </td>
+            </tr>
+          </tbody>
         </table>
         <p class="tariff__toggles slider__toogles">
-          <button class="slider__toogle" type="button">1</button>
-          <button class="slider__toogle slider__toogle--current" type="button">2</button>
-          <button class="slider__toogle" type="button">3</button>
+          <button class="slider__toogle" type="button"><span class="visually-hidden">1</span></button>
+          <button class="slider__toogle slider__toogle--current" type="button"><span
+              class="visually-hidden">2</span></button>
+          <button class="slider__toogle" type="button"><span class="visually-hidden">3</span></button>
         </p>
       </div>
     </section>

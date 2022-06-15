@@ -1,37 +1,177 @@
 .tariff {
-  background-color: #f2f2f2;
+  background: linear-gradient(-5deg, #f2f2f2 0% 95%, #ffffff 95% 100%);
+
+  @media @tablet-width {
+    background: linear-gradient(-5deg, #f2f2f2 0% 89%, #ffffff 89% 100%);
+  }
+
+  @media @desktop-width {
+    background: linear-gradient(-5deg, #f2f2f2 0% 84%, #ffffff 84% 100%);
+  }
+}
+
+.tariff__wrapper {
+  position: relative;
+  padding: 83px 0 100px;
+  overflow-x: hidden;
+
+  @media @tablet-width {
+    padding: 83px 20px 70px;
+  }
+
+  @media @desktop-width {
+    width: 940px;
+    margin: 0 auto;
+    padding: 159px 0 98px;
+  }
 }
 
 .tariff__info {
-  display: none;  /* пока что на время */
+  // margin-left: 20px; /* --первый слайд*/
+  margin-left: calc(-100% + 60px); /* --второй слайд*/
+  // margin-left: calc(-200% + 100px); /* --третий слайд*/
+  table-layout: fixed;
+  width: calc(300% - 120px);
   border-collapse: collapse;
   text-transform: uppercase;
+
+  @media @tablet-width {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .tariff__item {
+  position: relative;
+  padding: 20px;
   color: #ffffff;
   text-align: center;
   background-color: #283645;
-  border: 2px solid #f2f2f2;
+  border: 2px solid #e5e5e5;
 
   &--hidden {
-    //visibility: hidden;
-    border: none;
-    background-color: transparent;
+    display: none;
+
+    @media @tablet-width {
+      display: table-cell;
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  &--hit {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 74px;
+      height: 74px;
+      background: linear-gradient(-45deg, transparent 0 50%, #d22856 50% 75%, transparent 75% 100%);
+    }
+
+    &::after {
+      content: "хит";
+      position: absolute;
+      top: 15px;
+      left: 13px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      transform: rotate(-45deg);
+    }
   }
 }
 
 .tariff__name {
+  display: block;
   font-weight: 700;
   font-size: 16px;
 }
 
 .tariff__price {
+  margin-bottom: 10px;
+  display: block;
   font-weight: 300;
   font-size: 18px;
+
+  @media @tablet-width {
+    margin: 0;
+  }
+
+  @media @desktop-width {
+    font-size: 24px;
+  }
 }
 
 .tariff__one {
+  position: relative;
+  padding: 20px 60px 20px 20px;
   background-color: #ffffff;
-  border: 2px solid #f2f2f2;
+  border: 2px solid #e5e5e5;
+
+  @media @tablet-width {
+    padding: 10px;
+  }
+
+  @media @tablet-width {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  &--empty {
+    display: none;
+
+    @media @tablet-width {
+      display: table-cell;
+      text-transform: none;
+    }
+  }
+}
+
+.tariff__hidden-name {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+
+    @media @tablet-width {
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  &--yes {
+    &::before {
+      width: 31px;
+      height: 21px;
+      background-image: url("../img/svg/icons/true-icon.svg");
+    }
+  }
+
+  &--no {
+    &::before {
+      width: 27px;
+      height: 27px;
+      background-image: url("../img/svg/icons/false-icon.svg");
+    }
+  }
+
+  @media @tablet-width {
+    font-size: 0;
+  }
+}
+
+.tariff__toggles {
+  .no_indent();
+  position: absolute;
+  bottom: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media @tablet-width {
+    display: none;
+  }
 }
