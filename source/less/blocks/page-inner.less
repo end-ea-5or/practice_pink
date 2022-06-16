@@ -1,11 +1,36 @@
-.page-inner__title {
-  .no_indent();
-  color: #ffffff;
+.page-inner__wrapper {
+  padding: 102px 20px 50px;
   background-color: #283645;
   background-image: url("../img/backgrounds/bg-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+
+  @media @tablet-width {
+    padding: 191px 20px 74px;
+    background-image: url("../img/backgrounds/bg-tablet.jpg");
+  }
+
+  @media @desktop-width {
+    padding: 184px 0 104px;
+    background-image: url("../img/backgrounds/bg-desktop.jpg");
+  }
+}
+
+.page-inner__title {
+  .no_indent();
+  color: #ffffff;
   text-align: center;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
+
+  @media @tablet-width {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  @media @desktop-width {
+    width: 940px;
+    margin: 0 auto;
+  }
 }

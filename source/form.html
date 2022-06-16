@@ -44,92 +44,116 @@
     </div>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post" enctype="multipart/form-data">
       <p class="form__message">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
-        вашу бонусную карту!</p>
-      <fieldset class="form__full-name">
+        вашу бонусную карту! <span class="form__message--hidden">Пожалуйста, заполните форму ниже:</span></p>
+      <fieldset class="form__field form__field--name">
         <legend class="visually-hidden">ФИО</legend>
-        <ul class="form__list">
+        <ul class="form__list form__list--name">
           <li class="form__item">
             <label class="form__description" for="surname">Фамилия:</label>
-            <input type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+            <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
           </li>
           <li class="form__item">
             <label class="form__description" for="name">Имя:</label>
-            <input type="text" name="name" id="name" placeholder="Укажите ваше имя *" required>
+            <input class="form__input" type="text" name="name" id="name" placeholder="Укажите ваше имя *" required>
           </li>
           <li class="form__item">
             <label class="form__description" for="patronymic">Отчество:</label>
-            <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__achievements form__achievements--gray">
-        <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="form__list">
+      <fieldset class="form__field form__field--achieves form__field--gray">
+        <legend class="form__legend  form__legend--achieves">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="form__list form__list--achieves">
           <li class="form__item">
-            <label class="form__checks" for="selfie">Сделал селфи с акулой</label>
-            <input type="checkbox" name="achievements" value="selfie" id="selfie" checked>
+            <label class="form__checks" for="selfie">Сделал селфи с акулой
+              <input class="form__check-item visually-hidden" type="checkbox" name="achievements" value="selfie"
+                id="selfie" checked>
+              <span class="form__mark"></span>
+            </label>
           </li>
           <li class="form__item">
-            <label class="form__checks" for="burned">Обгорел на пляже</label>
-            <input type="checkbox" name="achievements" value="burned" id="burned" checked>
+            <label class="form__checks" for="burned">Обгорел на пляже
+              <input class="form__check-item visually-hidden" type="checkbox" name="achievements" value="burned"
+                id="burned" checked>
+              <span class="form__mark"></span>
+            </label>
           </li>
           <li class="form__item">
-            <label class="form__checks" for="Chack">Видел Чака Норриса</label>
-            <input type="checkbox" name="achievements" value="Chack" id="Chack">
+            <label class="form__checks" for="Chack">Видел Чака Норриса
+              <input class="form__check-item visually-hidden" type="checkbox" name="achievements" value="Chack"
+                id="Chack">
+              <span class="form__mark"></span>
+            </label>
           </li>
           <li class="form__item">
-            <label class="form__checks" for="souvenirs">Накупил сувениров</label>
-            <input type="checkbox" name="achievements" value="souvenirs" id="souvenirs">
+            <label class="form__checks" for="souvenirs">Накупил сувениров
+              <input class="form__check-item visually-hidden" type="checkbox" name="achievements" value="souvenirs"
+                id="souvenirs">
+              <span class="form__mark"></span>
+            </label>
           </li>
           <li class="form__item">
-            <label class="form__checks" for="tower">Удержал башню</label>
-            <input type="checkbox" name="achievements" value="tower" id="tower" checked>
+            <label class="form__checks" for="tower">Удержал башню
+              <input class="form__check-item visually-hidden" type="checkbox" name="achievements" value="tower"
+                id="tower" checked>
+              <span class="form__mark"></span>
+            </label>
           </li>
           <li class="form__item">
-            <label class="form__checks" for="hotel">Разгромил отель</label>
-            <input type="checkbox" name="achievements" value="hotel" id="hotel">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__achievements">
-        <legend class="visually-hidden">Ваши контакты для связи</legend>
-        <ul class="form__list">
-          <li class="form__item">
-            <label class="form__description" for="tel">Номер телефона</label>
-            <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-          </li>
-          <li class="form__item">
-            <label class="form__description" for="email">Адрес почты</label>
-            <input type="email" name="email" id="email" placeholder="Введите почту *" required>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__achievements form__achievements--gray">
-        <legend class="form__legend">С каким приложением путешествовали?</legend>
-        <ul class="form__list">
-          <li class="form__item">
-            <label class="form__checks" for="ios">Pink для iOS</label>
-            <input type="radio" name="app" value="ios" id="ios" checked>
-          </li>
-          <li class="form__item">
-            <label class="form__checks" for="android">Pink на Android</label>
-            <input type="radio" name="app" value="android" id="android">
-          </li>
-          <li class="form__item">
-            <label class="form__checks" for="windows">Windows Phone</label>
-            <input type="radio" name="app" value="windows" id="windows">
+            <label class="form__checks" for="hotel">Разгромил отель
+              <input class="form__check-item visually-hidden" type="checkbox" name="achievements" value="hotel"
+                id="hotel">
+              <span class="form__mark"></span>
+            </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__emotions">
-        <legend class="form__legend">Опишите свои эмоции</legend>
+      <fieldset class="form__field form__field--contacts">
+        <legend class="form__legend form__legend--contacts">Контактная информация</legend>
+        <ul class="form__list form__list--contacts">
+          <li class="form__item form__item--contacts  form__item--phone">
+            <label class="form__description form__description--contacts" for="tel">Номер телефона</label>
+            <input class="form__input form__input--contacts" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+          </li>
+          <li class="form__item form__item--contacts form__item--mail">
+            <label class="form__description form__description--contacts" for="email">Адрес почты</label>
+            <input class="form__input form__input--contacts" type="email" name="email" id="email" placeholder="Введите почту *" required>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__field form__field--apps form__field--gray">
+        <legend class="form__legend form__legend--apps">С каким приложением путешествовали?</legend>
+        <ul class="form__list form__list--apps">
+          <li class="form__item">
+            <label class="form__checks form__checks--apps" for="ios">Pink для iOS
+              <input class="form__check-item visually-hidden" type="radio" name="app" value="ios" id="ios" checked>
+              <span class="form__point"></span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__checks form__checks--apps" for="android">Pink на Android
+              <input class="form__check-item visually-hidden" type="radio" name="app" value="android" id="android">
+              <span class="form__point"></span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__checks form__checks--apps" for="windows">Windows Phone
+              <input class="form__check-item visually-hidden" type="radio" name="app" value="windows" id="windows">
+              <span class="form__point"></span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__field form__field--emotions">
+        <legend class="form__legend form__legend--emotions">Опишите свои эмоции</legend>
         <label class="visually-hidden" for="emotions">Опишите тут свои эмоции</label>
-        <textarea name="emotions" id="emotions" cols="30" rows="10"
+        <textarea class="form__input" name="emotions" id="emotions" cols="30" rows="10"
           placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
       <div class="form__submit-wrapper">
         <button class="form__button" type="submit">Отправить форму</button>
-        <p class="form__directive"><span>*</span> — обязательные для заполнения поля</p>
+        <p class="form__directive"><span>*</span> — обязательные<b class="form__directive--hidden"> для заполнения</b> поля</p>
       </div>
     </form>
   </main>
@@ -158,7 +182,8 @@
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/">
           <span class="visually-hidden">HTML Academy</span>
-          <svg class="copyright__icon" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="copyright__icon" width="27" height="34" viewBox="0 0 27 34" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
               fill="#D22856" />
