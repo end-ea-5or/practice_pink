@@ -1,8 +1,24 @@
+.copyright {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  column-gap: 15px;
+}
+
 .copyright__text {
   font-weight: inherit;
   line-height: 18px;
+
+  @media @desktop-width {
+    font-size: 18px;
+  }
 }
 
 .copyright__link {
   .no_link_style();
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  padding: 5px;
+  box-sizing: content-box;
 }
