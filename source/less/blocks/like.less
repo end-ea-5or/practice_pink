@@ -1,0 +1,30 @@
+.like {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.like__label {
+  width: 13px;
+  height: 12px;
+}
+
+.like__button {
+  cursor: pointer;
+}
+
+.like__heart {
+  display: block;
+}
+
+.like__button:checked ~ .like__heart path {
+  transform: rotate(45deg);
+}
+
+.like__text {
+  margin-left: 18px;
+}
