@@ -7,10 +7,18 @@
     background-size: 100%, cover;
     background-position: left bottom, bottom;
     background-repeat: no-repeat;
+
+    @media @2dppx {
+      background-image: url("../img/backgrounds/phone-intro-tablet@2x.png"), url("../img/backgrounds/bg-tablet@2x.jpg");
+    }
   }
 
   @media @desktop-width {
     background-image: url("../img/backgrounds/phone-intro-desktop.png"), url("../img/backgrounds/bg-desktop.jpg");
+
+    @media @2dppx {
+      background-image: url("../img/backgrounds/phone-intro-desktop@2x.png"), url("../img/backgrounds/bg-desktop@2x.jpg");
+    }
   }
 }
 
@@ -36,6 +44,10 @@
   background-size: 100%, 100%;
   background-position: left bottom, left top;
   background-repeat: no-repeat;
+
+  @media @2dppx {
+    background-image: url("../img/backgrounds/phone-intro-mobile@2x.png"), url("../img/backgrounds/bg-mobile@2x.jpg");
+  }
 
   @media @tablet-width {
     width: 300px;

@@ -8,14 +8,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Сайт фотоприложения для раскрашивания серых будней</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <img src="img/svg/logos/logo-primary.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="74"
-          height="23">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/svg/logos/logo-tertiary.svg">
+          <source media="(min-width: 660px)" srcset="img/svg/logos/logo-secondary.svg">
+          <img src="img/svg/logos/logo-primary.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="74"
+            height="23">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -148,7 +156,7 @@
       <fieldset class="form__field form__field--emotions">
         <legend class="form__legend form__legend--emotions">Опишите свои эмоции</legend>
         <label class="visually-hidden" for="emotions">Опишите тут свои эмоции</label>
-        <textarea class="form__input" name="emotions" id="emotions" cols="30" rows="10"
+        <textarea class="form__input form__input--area" name="emotions" id="emotions" cols="30" rows="10"
           placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
       <div class="form__submit-wrapper">

@@ -36,5 +36,14 @@
   & img {
     .no_link_style();
     display: block;
+
+    @media @tablet-width {
+      width: 145px;
+      height: 40px;
+    }
+
+    @media @desktop-width {
+      width: 147px;
+    }
   }
 }
