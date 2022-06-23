@@ -18,12 +18,18 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/svg/logos/logo-tertiary.svg">
-          <source media="(min-width: 660px)" srcset="img/svg/logos/logo-secondary.svg">
-          <img src="img/svg/logos/logo-primary.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="74"
-            height="23">
-        </picture>
+        <svg class="page-header__svg-logo page-header__svg-logo--mobile" width="74" height="23" role="img"
+          fill="#ffffff">
+          <use href="img/svg/svg-sprite.svg#main-logo-mobile"></use>
+        </svg>
+        <svg class="page-header__svg-logo page-header__svg-logo--tablet" width="145" height="40" role="img"
+          fill="#ffffff">
+          <use href="img/svg/svg-sprite.svg#main-logo-tablet"></use>
+        </svg>
+        <svg class="page-header__svg-logo page-header__svg-logo--desktop" width="147" height="40" role="img"
+          fill="#ffffff">
+          <use href="img/svg/svg-sprite.svg#main-logo-desktop"></use>
+        </svg>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -122,11 +128,13 @@
         <ul class="form__list form__list--contacts">
           <li class="form__item form__item--contacts  form__item--phone">
             <label class="form__description form__description--contacts" for="tel">Номер телефона</label>
-            <input class="form__input form__input--contacts" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+            <input class="form__input form__input--contacts" type="tel" name="tel" id="tel"
+              placeholder="Номер, пожалуйста">
           </li>
           <li class="form__item form__item--contacts form__item--mail">
             <label class="form__description form__description--contacts" for="email">Адрес почты</label>
-            <input class="form__input form__input--contacts" type="email" name="email" id="email" placeholder="Введите почту *" required>
+            <input class="form__input form__input--contacts" type="email" name="email" id="email"
+              placeholder="Введите почту *" required>
           </li>
         </ul>
       </fieldset>
@@ -161,27 +169,36 @@
       </fieldset>
       <div class="form__submit-wrapper">
         <button class="form__button" type="submit">Отправить форму</button>
-        <p class="form__directive"><span>*</span> — обязательные<b class="form__directive--hidden"> для заполнения</b> поля</p>
+        <p class="form__directive"><span>*</span> — обязательные<b class="form__directive--hidden"> для заполнения</b>
+          поля</p>
       </div>
     </form>
     <!-- модельное окно -->
     <section class="modal modal--failure">
       <h2 class="modal__title">Что-то пошло не так!</h2>
-      <p class="modal__text modal__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <p class="modal__text modal__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их
+        заполнить</p>
       <button class="modal__button" type="button">Ок</button>
     </section>
     <!-- модельное окно -->
     <section class="modal modal--success">
       <h2 class="modal__title">Ваша заявка отправлена</h2>
-      <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим
+        ее и оповестим вас.</p>
       <button class="modal__button" type="button">Закрыть окно</button>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html">
-        <img src="img/svg/logos/logo-footer.svg" alt="Сайт фотоприложения для раскрашивания серых будней" width="145"
-          height="40">
+        <svg class="page-footer__svg-logo" width="145" height="40">
+          <path
+            d="M71 18.55a1.28 1.28 0 0 1 1.26-1.29h7.13c5.06 0 8.38 2.7 8.38 7.13v.06c0 4.85-4.03 7.36-8.8 7.36h-5.43v6.8a1.28 1.28 0 0 1-.76 1.28 1.27 1.27 0 0 1-1.71-.76 1.28 1.28 0 0 1-.07-.52V18.55Zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H73.6v9.88l5.48.04ZM92.6 18.39a1.28 1.28 0 0 1 .76-1.28 1.27 1.27 0 0 1 1.72.76c.05.16.07.34.06.52V38.6a1.28 1.28 0 0 1-.76 1.28 1.27 1.27 0 0 1-1.71-.76 1.28 1.28 0 0 1-.07-.52V18.4Zm9.08.03a1.28 1.28 0 0 1 1.26-1.25h.34a1.53 1.53 0 0 1 1.29.74l13.6 17.4V18.36c0-.33.13-.64.36-.88a1.23 1.23 0 0 1 1.74 0c.23.24.36.55.36.88v20.3c0 .14-.02.3-.08.44a1.13 1.13 0 0 1-1.07.73h-.13a1.69 1.69 0 0 1-1.31-.78l-13.91-17.81v17.41a1.26 1.26 0 0 1-1.2 1.25 1.23 1.23 0 0 1-1.2-1.25V18.42h-.05Zm25.27-.03a1.28 1.28 0 0 1 .75-1.28 1.27 1.27 0 0 1 1.45.3 1.29 1.29 0 0 1 .33.98v12.3l12.76-13.14c.26-.27.62-.43 1-.45a1.27 1.27 0 0 1 1.21 1.26 1.28 1.28 0 0 1-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.3 1.3 0 0 1-1.34 1.28 1.23 1.23 0 0 1-1-.58l-8.36-10.46-4.83 4.84v4.9a1.28 1.28 0 0 1-.37.89 1.26 1.26 0 0 1-2.15-.9V18.4h-.01Z"
+            fill="#283645" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="m53.9 6.59 5.03 21.14a1.42 1.42 0 0 1-.22 1.3 1.36 1.36 0 0 1-1.18.53h-4.01a11.63 11.63 0 0 1-11.49 10.32c-5.92 0-10.8-4.5-11.49-10.32h-1.96A11.75 11.75 0 0 1 16.97 40c-6 0-10.94-4.57-11.61-10.47H1.45A1.36 1.36 0 0 1 .3 29a1.42 1.42 0 0 1-.24-1.27L5.1 6.6C5.45 4.26 7.64 0 13.49 0c.38 0 .76.16 1.03.43a1.5 1.5 0 0 1 0 2.1 1.45 1.45 0 0 1-1.03.44c-4.71 0-5.44 3.7-5.5 4.1L3.34 26.6h2.04a11.75 11.75 0 0 1 11.59-10.3c5.94 0 10.84 4.48 11.6 10.3h1.99a11.63 11.63 0 0 1 11.47-10.19c5.89 0 10.75 4.46 11.48 10.22v-.05h2.14L51 7.08c-.07-.42-.77-4.1-5.5-4.1a1.45 1.45 0 0 1-1.03-.44 1.5 1.5 0 0 1-.43-1.05c0-.4.15-.78.43-1.05A1.45 1.45 0 0 1 45.5 0c5.85 0 8.03 4.26 8.38 6.59ZM25.66 29.56a9.12 9.12 0 0 0-.02-2.97 8.85 8.85 0 0 0-8.68-7.38 8.85 8.85 0 0 0-8.68 7.4 9.11 9.11 0 0 0-.03 2.93 8.85 8.85 0 0 0 8.7 7.54c4.4 0 8.04-3.25 8.71-7.52Zm24.94 0a8.76 8.76 0 0 0-8.58-10.23 8.76 8.76 0 0 0-8.58 10.23 8.73 8.73 0 0 0 8.58 7.4c4.33 0 7.92-3.2 8.58-7.4Z"
+            fill="#D22856" />
+        </svg>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -202,11 +219,8 @@
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/">
           <span class="visually-hidden">HTML Academy</span>
-          <svg class="copyright__icon" width="27" height="34" viewBox="0 0 27 34" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-              fill="#D22856" />
+          <svg class="copyright__icon" width="27" height="34" viewBox="0 0 27 34" fill="none">
+            <use href="img/svg/svg-sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>

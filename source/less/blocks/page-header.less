@@ -32,18 +32,56 @@
   @media @desktop-width {
     padding: 27px 20px 42px 0;
   }
+  // & img {
+  //   .no_link_style();
+  //   display: block;
 
-  & img {
-    .no_link_style();
+  //   @media @tablet-width {
+  //     width: 145px;
+  //     height: 40px;
+  //   }
+
+  //   @media @desktop-width {
+  //     width: 147px;
+  //   }
+  // }
+}
+
+.page-header__svg-logo {
+  &--mobile {
     display: block;
 
     @media @tablet-width {
-      width: 145px;
-      height: 40px;
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media @tablet-width {
+      display: block;
     }
 
     @media @desktop-width {
-      width: 147px;
+      display: none;
     }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media @desktop-width {
+      display: block;
+    }
+  }
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
   }
 }
