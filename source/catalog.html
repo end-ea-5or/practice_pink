@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Сайт фотоприложения для раскрашивания серых будней</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
@@ -40,7 +40,7 @@
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="#">Фотографии</a>
+            <a class="main-nav__link" href="catalog.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -64,14 +64,9 @@
         <h3 class="visually-hidden">Панорама дня</h3>
         <a class="photo__link" href="#">
           <picture>
-            <!--
-            <source type="image/avif" media="(max-width: 1200px)" srcset="img/gallery/panorama-desktop.avif 1x, img/gallery/panorama-desktop@2x.avif 2x">
-            <source type="image/avif" media="(max-width: 660px)" srcset="img/gallery/panorama-tablet.avif 1x, img/gallery/panorama-tablet@2x.avif 2x">
-            <source type="image/avif" srcset="img/gallery/panorama-mobile.avif 1x, img/gallery/panorama-mobile@2x.avif 2x">
-            <source type="image/webp" media="(max-width: 1200px)" srcset="img/gallery/panorama-desktop.webp 1x, img/gallery/panorama-desktop@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 660px)" srcset="img/gallery/panorama-tablet.webp 1x, img/gallery/panorama-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/panorama-desktop.webp 1x, img/gallery/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/panorama-tablet.webp 1x, img/gallery/panorama-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/gallery/panorama-mobile.webp 1x, img/gallery/panorama-mobile@2x.webp 2x">
-            -->
             <source media="(min-width: 1200px)" srcset="img/gallery/panorama-desktop.jpg 1x, img/gallery/panorama-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/gallery/panorama-tablet.jpg 1x, img/gallery/panorama-tablet@2x.jpg 2x">
             <img class="photo__pic" src="img/gallery/panorama-mobile.jpg" srcset="img/gallery/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фото пользователя. Панорама дня">
@@ -97,14 +92,9 @@
           <h3 class="visually-hidden">Фото пользователя</h3>
           <a class="photo__link" href="#">
             <picture>
-              <!--
-              <source type="image/avif" media="(max-width: 1200px)" srcset="img/gallery/photo-1-desktop.avif 1x, img/gallery/photo-1-desktop@2x.avif 2x">
-              <source type="image/avif" media="(max-width: 660px)" srcset="img/gallery/photo-1-tablet.avif 1x, img/gallery/photo-1-tablet@2x.avif 2x">
-              <source type="image/avif" srcset="img/gallery/photo-1-mobile.avif 1x, img/gallery/photo-1-mobile@2x.avif 2x">
-              <source type="image/webp" media="(max-width: 1200px)" srcset="img/gallery/photo-1-desktop.webp 1x, img/gallery/photo-1-desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 660px)" srcset="img/gallery/photo-1-tablet.webp 1x, img/gallery/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop.webp 1x, img/gallery/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/photo-1-tablet.webp 1x, img/gallery/photo-1-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/gallery/photo-1-mobile.webp 1x, img/gallery/photo-1-mobile@2x.webp 2x">
-            -->
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-1-tablet.jpg 1x, img/gallery/photo-1-tablet@2x.jpg 2x">
               <img class="photo__pic" src="img/gallery/photo-1-mobile.jpg" srcset="img/gallery/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
@@ -128,14 +118,9 @@
           <h3 class="visually-hidden">Фото пользователя</h3>
           <a class="photo__link" href="#">
             <picture>
-              <!--
-              <source type="image/avif" media="(max-width: 1200px)" srcset="img/gallery/photo-2-desktop.avif 1x, img/gallery/photo-2-desktop@2x.avif 2x">
-              <source type="image/avif" media="(max-width: 660px)" srcset="img/gallery/photo-2-tablet.avif 1x, img/gallery/photo-2-tablet@2x.avif 2x">
-              <source type="image/avif" srcset="img/gallery/photo-2-mobile.avif 1x, img/gallery/photo-2-mobile@2x.avif 2x">
-              <source type="image/webp" media="(max-width: 1200px)" srcset="img/gallery/photo-2-desktop.webp 1x, img/gallery/photo-2-desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 660px)" srcset="img/gallery/photo-2-tablet.webp 1x, img/gallery/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop.webp 1x, img/gallery/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/photo-2-tablet.webp 1x, img/gallery/photo-2-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/gallery/photo-2-mobile.webp 1x, img/gallery/photo-2-mobile@2x.webp 2x">
-            -->
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x">
               <img class="photo__pic" src="img/gallery/photo-2-mobile.jpg" srcset="img/gallery/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
@@ -159,14 +144,9 @@
           <h3 class="visually-hidden">Фото пользователя</h3>
           <a class="photo__link" href="#">
             <picture>
-              <!--
-              <source type="image/avif" media="(max-width: 1200px)" srcset="img/gallery/photo-3-desktop.avif 1x, img/gallery/photo-3-desktop@2x.avif 2x">
-              <source type="image/avif" media="(max-width: 660px)" srcset="img/gallery/photo-3-tablet.avif 1x, img/gallery/photo-3-tablet@2x.avif 2x">
-              <source type="image/avif" srcset="img/gallery/photo-3-mobile.avif 1x, img/gallery/photo-3-mobile@2x.avif 2x">
-              <source type="image/webp" media="(max-width: 1200px)" srcset="img/gallery/photo-3-desktop.webp 1x, img/gallery/photo-3-desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 660px)" srcset="img/gallery/photo-3-tablet.webp 1x, img/gallery/photo-3-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop.webp 1x, img/gallery/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/photo-3-tablet.webp 1x, img/gallery/photo-3-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/gallery/photo-3-mobile.webp 1x, img/gallery/photo-3-mobile@2x.webp 2x">
-            -->
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-3-tablet.jpg 1x , img/gallery/photo-3-tablet@2x.jpg 2x">
               <img class="photo__pic" src="img/gallery/photo-3-mobile.jpg" srcset="img/gallery/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
@@ -190,14 +170,9 @@
           <h3 class="visually-hidden">Фото пользователя</h3>
           <a class="photo__link" href="#">
             <picture>
-              <!--
-              <source type="image/avif" media="(max-width: 1200px)" srcset="img/gallery/photo-4-desktop.avif 1x, img/gallery/photo-4-desktop@2x.avif 2x">
-              <source type="image/avif" media="(max-width: 660px)" srcset="img/gallery/photo-4-tablet.avif 1x, img/gallery/photo-4-tablet@2x.avif 2x">
-              <source type="image/avif" srcset="img/gallery/photo-4-mobile.avif 1x, img/gallery/photo-4-mobile@2x.avif 2x">
-              <source type="image/webp" media="(max-width: 1200px)" srcset="img/gallery/photo-4-desktop.webp 1x, img/gallery/photo-4-desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 660px)" srcset="img/gallery/photo-4-tablet.webp 1x, img/gallery/photo-4-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop.webp 1x, img/gallery/photo-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/photo-4-tablet.webp 1x, img/gallery/photo-4-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/gallery/photo-4-mobile.webp 1x, img/gallery/photo-4-mobile@2x.webp 2x">
-            -->
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-4-tablet.jpg 1x , img/gallery/photo-4-tablet@2x.jpg 2x">
               <img class="photo__pic" src="img/gallery/photo-4-mobile.jpg" srcset="img/gallery/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
@@ -221,14 +196,9 @@
           <h3 class="visually-hidden">Фото пользователя</h3>
           <a class="photo__link" href="#">
             <picture>
-              <!--
-              <source type="image/avif" media="(max-width: 1200px)" srcset="img/gallery/photo-5-desktop.avif 1x, img/gallery/photo-5-desktop@2x.avif 2x">
-              <source type="image/avif" media="(max-width: 660px)" srcset="img/gallery/photo-5-tablet.avif 1x, img/gallery/photo-5-tablet@2x.avif 2x">
-              <source type="image/avif" srcset="img/gallery/photo-5-mobile.avif 1x, img/gallery/photo-5-mobile@2x.avif 2x">
-              <source type="image/webp" media="(max-width: 1200px)" srcset="img/gallery/photo-5-desktop.webp 1x, img/gallery/photo-5-desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 660px)" srcset="img/gallery/photo-5-tablet.webp 1x, img/gallery/photo-5-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-5-desktop.webp 1x, img/gallery/photo-5-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/photo-5-tablet.webp 1x, img/gallery/photo-5-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/gallery/photo-5-mobile.webp 1x, img/gallery/photo-5-mobile@2x.webp 2x">
-            -->
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-5-desktop.jpg 1x, img/gallery/photo-5-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-5-tablet.jpg 1x , img/gallery/photo-5-tablet@2x.jpg 2x">
               <img class="photo__pic" src="img/gallery/photo-5-mobile.jpg" srcset="img/gallery/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
@@ -252,14 +222,9 @@
           <h3 class="visually-hidden">Фото пользователя</h3>
           <a class="photo__link" href="#">
             <picture>
-              <!--
-              <source type="image/avif" media="(max-width: 1200px)" srcset="img/gallery/photo-6-desktop.avif 1x, img/gallery/photo-6-desktop@2x.avif 2x">
-              <source type="image/avif" media="(max-width: 660px)" srcset="img/gallery/photo-6-tablet.avif 1x, img/gallery/photo-6-tablet@2x.avif 2x">
-              <source type="image/avif" srcset="img/gallery/photo-6-mobile.avif 1x, img/gallery/photo-6-mobile@2x.avif 2x">
-              <source type="image/webp" media="(max-width: 1200px)" srcset="img/gallery/photo-6-desktop.webp 1x, img/gallery/photo-6-desktop@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 660px)" srcset="img/gallery/photo-6-tablet.webp 1x, img/gallery/photo-6-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/photo-6-desktop.webp 1x, img/gallery/photo-6-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/gallery/photo-6-tablet.webp 1x, img/gallery/photo-6-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/gallery/photo-6-mobile.webp 1x, img/gallery/photo-6-mobile@2x.webp 2x">
-            -->
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-6-desktop.jpg 1x, img/gallery/photo-6-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-6-tablet.jpg 1x , img/gallery/photo-6-tablet@2x.jpg 2x">
               <img class="photo__pic" src="img/gallery/photo-6-mobile.jpg" srcset="img/gallery/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
@@ -287,10 +252,7 @@
         <label class="photoeditor__label">
           <span class="visually-hidden">Выбрать фотографию</span>
           <picture>
-            <!--
-            <source type="image/avif" srcset="img/gallery/upload-image.avif 1x, img/gallery/upload-image@2x.avif 2x">
             <source type="image/webp" srcset="img/gallery/upload-image.webp 1x, img/gallery/upload-image@2x.webp 2x">
-            -->
             <img class="photoeditor__picture" src="img/gallery/upload-image.jpg" srcset="img/gallery/upload-image@2x.jpg 2x" width="280" height="374" alt="Редактируемое фото">
           </picture>
           <input class="visually-hidden" type="file" name="upload-field">
@@ -298,19 +260,19 @@
         <div class="photoeditor__buttons">
           <button class="photoeditor__button" type="button">
             <span class="visually-hidden">Обрезать</span>
-            <svg class="photoeditor__icon photoeditor__icon--crop" width="44" height="44" fill="#283645">
+            <svg class="photoeditor__icon photoeditor__icon--crop" width="44" height="44" viewBox="0 0 44 44" fill="#283645">
               <use href="img/svg/svg-sprite.svg#icon-crop"></use>
             </svg>
           </button>
           <button class="photoeditor__button" type="button">
             <span class="visually-hidden">Сделать заливку</span>
-            <svg class="photoeditor__icon photoeditor__icon--filling" width="48" height="43" fill="#283645">
+            <svg class="photoeditor__icon photoeditor__icon--filling" width="48" height="43" viewBox="0 0 48 43" fill="#283645">
               <use href="img/svg/svg-sprite.svg#icon-filling"></use>
             </svg>
           </button>
           <button class="photoeditor__button" type="button">
             <span class="visually-hidden">Изменить контрастность</span>
-            <svg class="photoeditor__icon photoeditor__icon--contrast" width="32" height="32" fill="#283645">
+            <svg class="photoeditor__icon photoeditor__icon--contrast" width="32" height="32" viewBox="0 0 32 32" fill="#283645">
               <use href="img/svg/svg-sprite.svg#icon-contrast"></use>
             </svg>
           </button>
@@ -374,7 +336,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

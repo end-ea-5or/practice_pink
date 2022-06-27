@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Сайт фотоприложения для раскрашивания серых будней</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
@@ -37,7 +37,7 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="#">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фотографии</a>
@@ -270,13 +270,9 @@
       </div>
       <div class="contacts__map">
         <picture>
-          <!--
-          <source type="image/avif" media="(max-width: 1200px)" srcset="img/map/map-desktop.avif 1x, img/map/map-desktop@2x.avif 2x">
-          <source type="image/avif" media="(max-width: 660px)" srcset="img/map/map-tablet.avif 1x, img/map/map-tablet@2x.avif 2x">
-          <source type="image/avif" srcset="img/map/map-mobile.avif 1x, img/map/map-mobile@2x.avif 2x">
-          <source type="image/webp" media="(max-width: 1200px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 660px)" srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x">   -->
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x">
           <img class="contacts__map-picture" src="img/map/map-mobile.jpg" srcset="img/map/map-mobile@2x.jpg 2x"
@@ -323,7 +319,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
