@@ -61,7 +61,7 @@ const copyImages = () => {
 }
 
 const createWwebp = () => {
-  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*.{png,jpg}'])
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*.{png,jpg}', '!source/img/backgrounds/*', '!source/img/phones/*'])
     .pipe(squoosh({
       webp: {}
     }))

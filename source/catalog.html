@@ -12,12 +12,15 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo" href="index.html" aria-label="Сайт фотоприложения">
         <svg class="page-header__svg-logo page-header__svg-logo--mobile" width="74" height="23" role="img"
           fill="#ffffff">
           <use href="img/svg/svg-sprite.svg#main-logo-mobile"></use>
@@ -79,7 +82,7 @@
           <div class="photo__like like">
             <label class="like__label">
               <input class="like__button visually-hidden" type="checkbox" name="like">
-              <svg class="like__heart" width="13" height="12">
+              <svg class="like__heart" width="13" height="12" aria-label="Поставь лайк">
                 <use href="img/svg/svg-sprite.svg#icon-heart"></use>
               </svg>
             </label>
@@ -97,7 +100,7 @@
               <source type="image/webp" srcset="img/gallery/photo-1-mobile.webp 1x, img/gallery/photo-1-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-1-tablet.jpg 1x, img/gallery/photo-1-tablet@2x.jpg 2x">
-              <img class="photo__pic" src="img/gallery/photo-1-mobile.jpg" srcset="img/gallery/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
+              <img class="photo__pic" src="img/gallery/photo-1-mobile.jpg" srcset="img/gallery/photo-1-mobile@2x.jpg 2x" width="280" height="180" loading="lazy" alt="Фото пользователя">
             </picture>
           </a>
           <div class="gallery__post photo__post">
@@ -106,7 +109,7 @@
             <div class="photo__like like">
               <label class="like__label">
                 <input class="like__button visually-hidden" type="checkbox" name="like">
-                <svg class="like__heart" width="13" height="12">
+                <svg class="like__heart" width="13" height="12" aria-label="Поставь лайк">
                   <use href="img/svg/svg-sprite.svg#icon-heart"></use>
                 </svg>
               </label>
@@ -123,7 +126,7 @@
               <source type="image/webp" srcset="img/gallery/photo-2-mobile.webp 1x, img/gallery/photo-2-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x">
-              <img class="photo__pic" src="img/gallery/photo-2-mobile.jpg" srcset="img/gallery/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
+              <img class="photo__pic" src="img/gallery/photo-2-mobile.jpg" srcset="img/gallery/photo-2-mobile@2x.jpg 2x" width="280" height="180" loading="lazy" alt="Фото пользователя">
             </picture>
           </a>
           <div class="gallery__post photo__post">
@@ -132,7 +135,7 @@
             <div class="photo__like like">
               <label class="like__label">
                 <input class="like__button visually-hidden" type="checkbox" name="like">
-                <svg class="like__heart" width="13" height="12">
+                <svg class="like__heart" width="13" height="12" aria-label="Поставь лайк">
                   <use href="img/svg/svg-sprite.svg#icon-heart"></use>
                 </svg>
               </label>
@@ -149,7 +152,7 @@
               <source type="image/webp" srcset="img/gallery/photo-3-mobile.webp 1x, img/gallery/photo-3-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-3-tablet.jpg 1x , img/gallery/photo-3-tablet@2x.jpg 2x">
-              <img class="photo__pic" src="img/gallery/photo-3-mobile.jpg" srcset="img/gallery/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
+              <img class="photo__pic" src="img/gallery/photo-3-mobile.jpg" srcset="img/gallery/photo-3-mobile@2x.jpg 2x" width="280" height="180" loading="lazy" alt="Фото пользователя">
             </picture>
           </a>
           <div class="gallery__post photo__post">
@@ -158,7 +161,7 @@
             <div class="photo__like like">
               <label class="like__label">
                 <input class="like__button visually-hidden" type="checkbox" name="like">
-                <svg class="like__heart" width="13" height="12">
+                <svg class="like__heart" width="13" height="12" aria-label="Поставь лайк">
                   <use href="img/svg/svg-sprite.svg#icon-heart"></use>
                 </svg>
               </label>
@@ -175,7 +178,7 @@
               <source type="image/webp" srcset="img/gallery/photo-4-mobile.webp 1x, img/gallery/photo-4-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-4-tablet.jpg 1x , img/gallery/photo-4-tablet@2x.jpg 2x">
-              <img class="photo__pic" src="img/gallery/photo-4-mobile.jpg" srcset="img/gallery/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
+              <img class="photo__pic" src="img/gallery/photo-4-mobile.jpg" srcset="img/gallery/photo-4-mobile@2x.jpg 2x" width="280" height="180" loading="lazy" alt="Фото пользователя">
             </picture>
           </a>
           <div class="gallery__post photo__post">
@@ -184,7 +187,7 @@
             <div class="photo__like like">
               <label class="like__label">
                 <input class="like__button visually-hidden" type="checkbox" name="like">
-                <svg class="like__heart" width="13" height="12">
+                <svg class="like__heart" width="13" height="12" aria-label="Поставь лайк">
                   <use href="img/svg/svg-sprite.svg#icon-heart"></use>
                 </svg>
               </label>
@@ -201,7 +204,7 @@
               <source type="image/webp" srcset="img/gallery/photo-5-mobile.webp 1x, img/gallery/photo-5-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-5-desktop.jpg 1x, img/gallery/photo-5-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-5-tablet.jpg 1x , img/gallery/photo-5-tablet@2x.jpg 2x">
-              <img class="photo__pic" src="img/gallery/photo-5-mobile.jpg" srcset="img/gallery/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
+              <img class="photo__pic" src="img/gallery/photo-5-mobile.jpg" srcset="img/gallery/photo-5-mobile@2x.jpg 2x" width="280" height="180" loading="lazy" alt="Фото пользователя">
             </picture>
           </a>
           <div class="gallery__post photo__post">
@@ -210,7 +213,7 @@
             <div class="photo__like like">
               <label class="like__label">
                 <input class="like__button visually-hidden" type="checkbox" name="like">
-                <svg class="like__heart" width="13" height="12">
+                <svg class="like__heart" width="13" height="12" aria-label="Поставь лайк">
                   <use href="img/svg/svg-sprite.svg#icon-heart"></use>
                 </svg>
               </label>
@@ -227,7 +230,7 @@
               <source type="image/webp" srcset="img/gallery/photo-6-mobile.webp 1x, img/gallery/photo-6-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gallery/photo-6-desktop.jpg 1x, img/gallery/photo-6-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/gallery/photo-6-tablet.jpg 1x , img/gallery/photo-6-tablet@2x.jpg 2x">
-              <img class="photo__pic" src="img/gallery/photo-6-mobile.jpg" srcset="img/gallery/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя">
+              <img class="photo__pic" src="img/gallery/photo-6-mobile.jpg" srcset="img/gallery/photo-6-mobile@2x.jpg 2x" width="280" height="180" loading="lazy" alt="Фото пользователя">
             </picture>
           </a>
           <div class="gallery__post photo__post">
@@ -236,7 +239,7 @@
             <div class="photo__like like">
               <label class="like__label">
                 <input class="like__button visually-hidden" type="checkbox" name="like">
-                <svg class="like__heart" width="13" height="12">
+                <svg class="like__heart" width="13" height="12" aria-label="Поставь лайк">
                   <use href="img/svg/svg-sprite.svg#icon-heart"></use>
                 </svg>
               </label>
@@ -253,7 +256,7 @@
           <span class="visually-hidden">Выбрать фотографию</span>
           <picture>
             <source type="image/webp" srcset="img/gallery/upload-image.webp 1x, img/gallery/upload-image@2x.webp 2x">
-            <img class="photoeditor__picture" src="img/gallery/upload-image.jpg" srcset="img/gallery/upload-image@2x.jpg 2x" width="280" height="374" alt="Редактируемое фото">
+            <img class="photoeditor__picture" src="img/gallery/upload-image.jpg" srcset="img/gallery/upload-image@2x.jpg 2x" width="280" height="374" loading="lazy" alt="Редактируемое фото">
           </picture>
           <input class="visually-hidden" type="file" name="upload-field">
         </label>
@@ -300,7 +303,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo" href="index.html">
+      <a class="page-footer__logo" href="index.html" aria-label="Сайт фотоприложения">
         <svg class="page-footer__svg-logo" width="145" height="40">
           <path
             d="M71 18.55a1.28 1.28 0 0 1 1.26-1.29h7.13c5.06 0 8.38 2.7 8.38 7.13v.06c0 4.85-4.03 7.36-8.8 7.36h-5.43v6.8a1.28 1.28 0 0 1-.76 1.28 1.27 1.27 0 0 1-1.71-.76 1.28 1.28 0 0 1-.07-.52V18.55Zm8.07 10.97c3.7 0 6.14-2 6.14-4.99v-.06c0-3.2-2.4-4.87-5.96-4.87H73.6v9.88l5.48.04ZM92.6 18.39a1.28 1.28 0 0 1 .76-1.28 1.27 1.27 0 0 1 1.72.76c.05.16.07.34.06.52V38.6a1.28 1.28 0 0 1-.76 1.28 1.27 1.27 0 0 1-1.71-.76 1.28 1.28 0 0 1-.07-.52V18.4Zm9.08.03a1.28 1.28 0 0 1 1.26-1.25h.34a1.53 1.53 0 0 1 1.29.74l13.6 17.4V18.36c0-.33.13-.64.36-.88a1.23 1.23 0 0 1 1.74 0c.23.24.36.55.36.88v20.3c0 .14-.02.3-.08.44a1.13 1.13 0 0 1-1.07.73h-.13a1.69 1.69 0 0 1-1.31-.78l-13.91-17.81v17.41a1.26 1.26 0 0 1-1.2 1.25 1.23 1.23 0 0 1-1.2-1.25V18.42h-.05Zm25.27-.03a1.28 1.28 0 0 1 .75-1.28 1.27 1.27 0 0 1 1.45.3 1.29 1.29 0 0 1 .33.98v12.3l12.76-13.14c.26-.27.62-.43 1-.45a1.27 1.27 0 0 1 1.21 1.26 1.28 1.28 0 0 1-.41.9l-7.95 7.9 8.57 10.52c.23.26.35.6.35.94a1.3 1.3 0 0 1-1.34 1.28 1.23 1.23 0 0 1-1-.58l-8.36-10.46-4.83 4.84v4.9a1.28 1.28 0 0 1-.37.89 1.26 1.26 0 0 1-2.15-.9V18.4h-.01Z"
