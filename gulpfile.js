@@ -12,6 +12,14 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
+import ghpages from 'gulp-gh-pages';
+
+const ghpages.publish('dist', function (err) { });
+
+const deploy = () => {
+  return gulp.src('./build/**/*')
+    .pipe(ghpages());
+}
 
 // Styles
 export const styles = () => {
@@ -135,6 +143,7 @@ export const build = gulp.series(
     sprite,
     createWwebp
   ),
+  deploy
 );
 
 // Default
