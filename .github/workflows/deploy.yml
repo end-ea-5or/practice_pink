@@ -7,21 +7,14 @@ on:
 
 jobs:
   deploy:
-    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@master
-
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+      - uses: actions/checkout@master
+      - name: npm install, test and build
         run: |
           npm ci
           npm run build
-
-      - name: Deploy 🚀
-        uses: end-ea-5or/practice_pink
+      - name: Deploy site to gh-pages branch
+        uses: end-ea-5or/practice_pink@1
         with:
-          folder: build
-          clean: true
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
-
+          repo-token: ${{ secrets.GH_PAT }}
