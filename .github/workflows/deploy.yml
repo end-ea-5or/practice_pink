@@ -15,6 +15,6 @@ jobs:
           npm ci
           npm run build
       - name: Deploy site to gh-pages branch
-        uses: end-ea-5or/practice_pink@1
+        uses: end-ea-5or/practice_pink
         with:
           repo-token: ${{ secrets.GH_PAT }}
