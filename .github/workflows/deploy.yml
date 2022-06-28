@@ -14,3 +14,10 @@ jobs:
         run: |
           npm install
           npm run build
+      - name: Deploy 🚀
+        uses: end-ea-5or/practice_pink
+        with:
+        folder: build # The folder the action should deploy.
+
+
+
