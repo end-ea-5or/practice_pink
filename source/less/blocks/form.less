@@ -170,6 +170,15 @@
   &--area {
     resize: none;
   }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #d22856;
+  }
 }
 
 .form__field {
@@ -346,6 +355,14 @@
   @media @tablet-width {
     top: 10px;
   }
+}
+
+.form__item:hover .form__checks::before {
+  border-color: #283645;
+}
+
+.form__item:active .form__checks::before {
+  border-color: #d22856;
 }
 
 .form__submit-wrapper {
