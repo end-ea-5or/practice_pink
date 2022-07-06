@@ -8,21 +8,21 @@
 
 .photoeditor__title {
   .no_indent();
-  padding: 33px 30px 43px;
+  padding: 40px 30px 43px;
   background-color: #ffffff;
   font-weight: inherit;
   font-size: inherit;
   text-align: center;
 
   @media @tablet-width {
-    padding: 73px 100px 78px;
+    padding: 66px 100px 70px;
     font-size: 18px;
   }
 
   @media @desktop-width {
-    width: 500px;
+    width: 432px;
     margin: 0 auto;
-    padding: 67px 0 75px;
+    padding: 60px 0 66px;
   }
 }
 
@@ -43,6 +43,7 @@
     column-gap: 90px;
     width: 940px;
     margin: 0 auto;
+    margin-bottom: 29px;
     padding: 57px 60px 57px 80px;
     background-color: #f2f2f2;
   }
@@ -74,11 +75,11 @@
 
   @media @tablet-width {
     margin: 0;
-    margin-top: 17px;
+    margin-top: 9px;
     grid-template: repeat(3, min-content) / auto;
     grid-column: 2;
     grid-row: 1;
-    row-gap: 50px;
+    row-gap: 51px;
     z-index: 5;
     justify-self: start;
   }
@@ -118,8 +119,13 @@
   opacity: 0.3;
 
   @media @tablet-width {
+    margin-left: auto;
     opacity: 1;
     fill: #d22856;
+  }
+
+  @media @desktop-width {
+    margin: 0;
   }
 
   &--crop {
@@ -173,12 +179,17 @@
   border-bottom: 1px solid rgba(40, 54, 69, 0.1);
 
   @media @tablet-width {
+    margin-top: -16px;
     min-width: 275px;
     padding: 0;
     grid-column: 2;
     grid-row: 1;
     align-self: start;
     border: none;
+  }
+
+  @media @desktop-width {
+    margin-top: -10px;
   }
 }
 
@@ -187,12 +198,12 @@
 
   @media @tablet-width {
     display: block;
-    padding: 10px 18px 30px 50px;
+    padding: 17px 18px 23px 52px;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   }
 
   @media @desktop-width {
-    padding: 12px 30px 25px 92px;
+    padding: 12px 30px 28px 92px;
   }
 
   &--crop {
@@ -223,6 +234,14 @@
   display: block;
   border-color: #d22856;
   color: #d22856;
+
+  @media @tablet-width {
+    margin-bottom: 14px;
+  }
+
+  @media @desktop-width {
+    margin: 0;
+  }
 
   &:hover {
     background-color: #d22856;

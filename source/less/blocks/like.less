@@ -11,6 +11,10 @@
 .like__label {
   width: 13px;
   height: 12px;
+
+  @media @tablet-width {
+    order: 2;
+  }
 }
 
 .like__button {
@@ -19,8 +23,30 @@
 
 .like__heart {
   display: block;
+
+  &--best {
+    @media @tablet-width {
+      // margin-right: 30px;
+    }
+  }
 }
 
 .like__text {
   margin-left: 18px;
+
+  @media @tablet-width {
+    margin: 0;
+  }
+}
+
+.like__count {
+  @media @tablet-width {
+    margin-right: auto;
+  }
+
+  &--best {
+    @media @tablet-width {
+      margin-right: 15px;
+    }
+  }
 }

@@ -18,7 +18,7 @@
       text-transform: uppercase;
 
       @media @tablet-width {
-        top: 70px;
+        top: 59px;
       }
 
       @media @desktop-width {
@@ -36,8 +36,12 @@
 }
 
 .photo__post {
-  padding: 19px 10px 19px 17px;
+  padding: 18px 5px 19px 17px;
   background-color: #f2f2f2;
+
+  @media @tablet-width {
+    padding: 25px 30px 23px 30px;
+  }
 }
 
 .photo__author {
@@ -57,6 +61,13 @@
   .no_indent();
   margin-bottom: 11px;
   line-height: 24px;
+
+  &--best {
+    @media @tablet-width {
+      margin-bottom: 0;
+      order: 2;
+    }
+  }
 }
 
 .photo__like {

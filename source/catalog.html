@@ -36,7 +36,7 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span>Открыть меню</span> <!-- class="visually-hidden" был-->
+          <span>Открыть меню</span>
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -57,7 +57,7 @@
   </header>
   <main class="page__main page-inner">
     <div class="page-inner__wrapper  page-inner__wrapper--catalog">
-      <h1 class="page-inner__title">Фотографии пользователей</h1>
+      <h1 class="page-inner__title">Фотографии<br> пользователей</h1>
     </div>
     <section class="gallery">
       <h2 class="visually-hidden">Галеррея фотографий пользователей</h2>
@@ -76,17 +76,17 @@
           </picture>
         </a>
         <div class="gallery__post gallery__post--best photo__post">
-          <p class="photo__author">Анна <span class="photo__time">(5 минут назад)</span></p>
-          <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в
+          <p class="gallery__best-author photo__author">Анна <span class="photo__time">(5 минут назад)</span></p>
+          <p class="photo__text photo__text--best">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в
             перископе, задавайте свои вопросы!</p>
-          <div class="photo__like like">
-            <label class="like__label">
+          <div class="gallery__best-like photo__like photo__like--best like">
+            <label class="like__label like__label--best">
               <input class="like__button visually-hidden" type="checkbox" name="like">
-              <svg class="like__heart" width="13" height="12" aria-label="Поставь лайк">
+              <svg class="like__heart like__heart--best" width="13" height="12" aria-label="Поставь лайк">
                 <use href="img/svg/svg-sprite.svg#icon-heart"></use>
               </svg>
             </label>
-            <span class="like__text">Нравится:&nbsp;</span><span class="like__count">215</span>
+            <span class="like__text like__text--best">Нравится:&nbsp;</span><span class="like__count like__count--best">215</span>
           </div>
         </div>
       </article>
@@ -291,7 +291,7 @@
           </label>
           <label class="range-bar photoeditor__range-bar photoeditor__range-bar--contrast">
             <span class="visually-hidden">Изменить контрастность</span>
-            <input class="range-bar__input" type="range" name="contrast" step="1" min="0" max="100" value="70">
+            <input class="range-bar__input" type="range" name="contrast" step="1" min="0" max="100" value="51">
           </label>
         </div>
         <div class="photoeditor__controls">
