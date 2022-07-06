@@ -14,18 +14,18 @@
   display: grid;
   grid-template: auto auto / 1fr 1fr;
   row-gap: 80px;
-  padding: 45px 20px 0;
+  padding: 40px 20px 0;
 
   @media @tablet-width {
     row-gap: 42px;
-    padding: 58px 20px 0;
+    padding: 47px 20px 0;
   }
 
   @media @desktop-width {
-    row-gap: 70px;
+    row-gap: 26px;
     width: 940px;
     margin: 0 auto;
-    padding: 77px 0 0 0;
+    padding: 61px 0 0 0;
   }
 }
 
@@ -75,6 +75,7 @@
     position: relative;
     grid-row: 2 / 3;
     grid-column: 2/3;
+    padding-top: 30px;
   }
 
   @media @desktop-width {
@@ -86,30 +87,30 @@
 }
 
 .advantages__item {
-  padding: 43px 5px 0;
+  padding: 30px 5px 0;
 
   @media @tablet-width {
-    padding: 46px 0 0;
+    padding: 34px 0 0;
   }
 
   @media @desktop-width {
     position: relative;
-    padding: 360px 0 20px;
+    padding: 358px 0 20px;
   }
 
   &--friends {
-    padding-bottom: 355px;
+    padding-bottom: 317px;
     background-image: url("../img/phones/iphone-3.png");
     background-repeat: no-repeat;
-    background-position: bottom -53px center;
+    background-position: bottom -45px center;
 
     @media @2dppx {
       background-image: url("../img/phones/iphone-3@2x.png");
-      background-size: 186px auto;
+      background-size: 157px auto;
     }
 
     @media @tablet-width {
-      padding-bottom: 49px;
+      padding-bottom: 41px;
       background: none;
     }
 
@@ -124,7 +125,7 @@
         bottom: 0;
         left: -310px;
         width: 268px;
-        height: 461px;
+        height: 484px;
         background-image: url("../img/phones/iphone-3-tablet.png");
 
         @media @2dppx {
@@ -156,13 +157,14 @@
 
 .advantages__definition {
   .no_indent();
-  margin-bottom: 24px;
+  margin-bottom: 13px;
   color: #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
 
   @media @desktop-width {
+    margin-bottom: 22px;
     font-size: 30px;
     line-height: 30px;
 

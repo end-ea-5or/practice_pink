@@ -56,7 +56,7 @@
     </div>
   </header>
   <main class="page__main page-inner">
-    <div class="page-inner__wrapper">
+    <div class="page-inner__wrapper  page-inner__wrapper--catalog">
       <h1 class="page-inner__title">Фотографии пользователей</h1>
     </div>
     <section class="gallery">
@@ -77,7 +77,7 @@
         </a>
         <div class="gallery__post gallery__post--best photo__post">
           <p class="photo__author">Анна <span class="photo__time">(5 минут назад)</span></p>
-          <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+          <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в
             перископе, задавайте свои вопросы!</p>
           <div class="photo__like like">
             <label class="like__label">
@@ -261,7 +261,7 @@
           <input class="visually-hidden" type="file" name="upload-field">
         </label>
         <div class="photoeditor__buttons">
-          <button class="photoeditor__button" type="button">
+          <button class="photoeditor__button photoeditor__button--active" type="button">
             <span class="visually-hidden">Обрезать</span>
             <svg class="photoeditor__icon photoeditor__icon--crop" width="44" height="44" viewBox="0 0 44 44" fill="#283645">
               <use href="img/svg/svg-sprite.svg#icon-crop"></use>
@@ -283,7 +283,7 @@
         <div class="photoeditor__ranges">
           <label class="range-bar photoeditor__range-bar photoeditor__range-bar--crop">
             <span class="visually-hidden">Обрезать фотографию</span>
-            <input class="range-bar__input" type="range" name="crop" step="1" min="0" max="100" value="88">
+            <input class="range-bar__input" type="range" name="crop" step="1" min="0" max="100" value="85">
           </label>
           <label class="range-bar photoeditor__range-bar photoeditor__range-bar--filling">
             <span class="visually-hidden">Выполнить заливку</span>
@@ -328,7 +328,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/">
           <span class="visually-hidden">HTML Academy</span>

@@ -15,14 +15,14 @@
   grid-template-columns: repeat(2, 1fr);
 
   @media @tablet-width {
-    padding: 102px 20px 100px;
+    padding: 96px 20px 84px;
   }
 
   @media @desktop-width {
     grid-template-columns: repeat(3, 1fr);
     width: 940px;
     margin: 0 auto;
-    padding: 100px 0 120px;
+    padding: 143px 0 110px;
   }
 }
 
@@ -30,7 +30,7 @@
   .no_indent();
   position: relative;
   width: 60%;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
   grid-column: 2;
   font-size: 30px;
   line-height: 36px;
@@ -38,7 +38,7 @@
 
   @media @desktop-width {
     grid-column: 2 / 4;
-    margin: 0 0 35px 90px;
+    margin: 0 0 25px 56px;
     line-height: 30px;
   }
 
@@ -47,7 +47,7 @@
     position: absolute;
     width: 238px;
     height: 276px;
-    top: -40px;
+    top: -42px;
     left: -310px;
     background-image: url("../img/svg/timer.svg");
     background-repeat: no-repeat;
@@ -55,7 +55,7 @@
     @media @desktop-width {
       width: 298px;
       height: 345px;
-      top: -80px;
+      top: -96px;
       left: -369px;
       background-size: 298px 345px;
     }
@@ -64,14 +64,16 @@
 
 .research__text {
   .no_indent();
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+  padding-right: 5px;
   grid-column: 2;
   line-height: 24px;
 
   @media @desktop-width {
     grid-column: 2 / 4;
-    margin: 0 0 45px 90px;
+    margin: 0 0 30px 56px;
     font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -82,8 +84,19 @@
 
   @media @desktop-width {
     grid-column: 2 / 4;
-    margin-left: 90px;
+    margin-left: 57px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: #283645;
+    opacity: 0.3;
+    text-decoration: none;
   }
 }

@@ -10,6 +10,7 @@
   }
 
   @media @desktop-width {
+    margin-top: -110px;
     margin-left: auto;
   }
 
@@ -32,6 +33,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: auto;
   }
@@ -58,14 +60,14 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
   @media @desktop-width {
-    margin-right: 38px;
+    margin-right: 69px;
     box-shadow: none;
   }
-}
 
-.main-nav__item:last-child {
-  @media @desktop-width {
-    margin-right: 0;
+  &:last-child {
+    @media @desktop-width {
+      margin-right: 0;
+    }
   }
 }
 
@@ -84,7 +86,7 @@
 .main-nav__link {
   position: relative;
   display: block;
-  padding: 15px 20px;
+  padding: 16px 20px;
   color: #ffffff;
   font-weight: 700;
   font-size: 18px;
@@ -93,19 +95,25 @@
   text-transform: uppercase;
 
   @media @desktop-width {
-    padding: 49px 20px;
+    padding: 49px 10px;
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
+  }
+
+  &:last-child {
+    @media @desktop-width {
+      padding-right: 0;
+    }
   }
 
   &--current::before {
     @media @desktop-width {
       content: "";
       position: absolute;
-      bottom: 30px;
-      left: 10px;
-      width: calc(100% - 20px);
+      bottom: 35px;
+      left: 9px;
+      width: calc(100% - 9px);
       height: 2px;
       background-color: #ffffff;
     }
@@ -137,7 +145,7 @@
   height: 24px;
 
   @media @tablet-width {
-    top: 43px;
+    top: 40px;
   }
 
   @media @desktop-width {

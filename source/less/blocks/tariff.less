@@ -12,17 +12,17 @@
 
 .tariff__wrapper {
   position: relative;
-  padding: 83px 0 100px;
+  padding: 99px 0 100px;
   overflow-x: hidden;
 
   @media @tablet-width {
-    padding: 83px 20px 70px;
+    padding: 92px 20px 70px;
   }
 
   @media @desktop-width {
     width: 940px;
     margin: 0 auto;
-    padding: 159px 0 98px;
+    padding: 146px 0 91px;
   }
 }
 
@@ -43,11 +43,19 @@
 
 .tariff__item {
   position: relative;
-  padding: 20px;
+  padding: 13px;
   color: #ffffff;
   text-align: center;
   background-color: #283645;
   border: 2px solid #e5e5e5;
+
+  @media @tablet-width {
+    padding: 10px;
+  }
+
+  @media @desktop-width {
+    padding: 19px;
+  }
 
   &--hidden {
     display: none;
@@ -67,7 +75,15 @@
       left: 0;
       width: 74px;
       height: 74px;
-      background: linear-gradient(-45deg, transparent 0 50%, #d22856 50% 75%, transparent 75% 100%);
+      background: linear-gradient(-45deg, transparent 0 51%, #d22856 51% 72%, transparent 72% 100%);
+
+      @media @tablet-width {
+        background: linear-gradient(-45deg, transparent 0 61%, #d22856 61% 78%, transparent 78% 100%);
+      }
+
+      @media @desktop-width {
+        background: linear-gradient(-45deg, transparent 0 51%, #d22856 51% 72%, transparent 72% 100%);
+      }
     }
 
     &::after {
@@ -79,6 +95,16 @@
       font-size: 14px;
       line-height: 30px;
       transform: rotate(-45deg);
+
+      @media @tablet-width {
+        top: 10px;
+        left: 8px;
+      }
+
+      @media @desktop-width {
+        top: 15px;
+        left: 13px;
+      }
     }
   }
 }
@@ -87,10 +113,14 @@
   display: block;
   font-weight: 700;
   font-size: 16px;
+
+  @media @desktop-width {
+    font-size: 18px;
+  }
 }
 
 .tariff__price {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   display: block;
   font-weight: 300;
   font-size: 18px;
@@ -106,16 +136,16 @@
 
 .tariff__one {
   position: relative;
-  padding: 20px 60px 20px 20px;
+  padding: 14px 60px 14px 20px;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 
   @media @tablet-width {
-    padding: 10px;
+    padding: 5px 10px 3px 13px;
   }
 
   @media @desktop-width {
-    padding: 15px;
+    padding: 10px 10px 13px 19px;
     font-size: 18px;
   }
 

@@ -8,7 +8,7 @@
 
 .photoeditor__title {
   .no_indent();
-  padding: 49px 30px 52px;
+  padding: 33px 30px 43px;
   background-color: #ffffff;
   font-weight: inherit;
   font-size: inherit;
@@ -70,7 +70,7 @@
   grid-template-columns: repeat(3, 48px);
   column-gap: 12.5%;
   justify-content: center;
-  margin: 0 20px 39px;
+  margin: 0 20px 21px;
 
   @media @tablet-width {
     margin: 0;
@@ -92,12 +92,29 @@
 .photoeditor__button {
   .no_button_style();
   display: block;
+
+  @media @tablet-width {
+    pointer-events: none;
+  }
+
+  &--active svg {
+    fill: #d22856;
+    opacity: 1;
+  }
+
+  &:hover svg {
+    opacity: 0.5;
+  }
+
+  &:active svg {
+    fill: #d22856;
+    opacity: 1;
+  }
 }
 
 
 .photoeditor__icon {
   display: block;
-  margin: auto;
   opacity: 0.3;
 
   @media @tablet-width {
@@ -108,8 +125,6 @@
   &--crop {
     width: 44px;
     height: 44px;
-    fill: #d22856;
-    opacity: 1;
 
     @media @tablet-width {
       width: 22px;
@@ -208,10 +223,30 @@
   display: block;
   border-color: #d22856;
   color: #d22856;
+
+  &:hover {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #d22856;
+    color: #ffffff;
+    opacity: 0.3;
+  }
 }
 
 .photoeditor__reset {
   border-color: #283645;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background: #283645;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   &:disabled {
     opacity: 0.1;
